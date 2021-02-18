@@ -1,5 +1,5 @@
 html {
-    background-color: #000;
+    background-color: #1e2123;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #000;
+    background-color: #1e2123;
     height: 100%;
     width: 100%;
 }
@@ -19,9 +19,111 @@ code {
         monospace;
 }
 
-
 /* Navbar tab underline (Manually Created Functionality -ERASE???*/
 .PrivateTabIndicator-colorPrimary-3 {
     background-color: red;
     height: 5px;
+}
+
+.wrap {
+    overflow-x:hidden;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+/* Removes visual scrollbar at all times (Revist this at a later point) */
+::-webkit-scrollbar {
+    -webkit-appearance: auto;
+    width: 0;
+}
+
+.Mui-selected {
+    border-bottom: 7px solid red!important;
+    color: #fafafa!important;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* All fade-in functionality */
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {
+    opacity:0;
+    }
+    66% { 
+        opacity:0; 
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+    opacity:0;
+    }
+    66% { 
+        opacity:0; 
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    66% { 
+        opacity:0; 
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    66% { 
+        opacity:0; 
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    66% { 
+        opacity:0; 
+    }
+    100% {
+        opacity:1;
+    }
 }
