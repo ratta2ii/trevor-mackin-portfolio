@@ -2,15 +2,17 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: "100%",
+        width: "70%",
+        maxWidth: 1100,
         margin: "auto",
-        padding: "75px 10% 0 10%",
-        backgroundColor: "#0a0a0a",
-        // display: 'flex',
+        marginTop: 65,
+        backgroundColor: "#1e2123",
         overflowX: "hidden",
-        // overflowY: "hidden",
+        [theme.breakpoints.down("md")]: {
+            width: '90%',
+        },
         [theme.breakpoints.down("sm")]: {
-            padding: "75px 5% 0 5%",
+            padding: "20px 5% 0 5%",
         },
     },
     title: {
@@ -29,20 +31,48 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down("sm")]: {
             fontSize: "3rem",
-            marginBottom: 100,
+            marginBottom: 70,
         },
         [theme.breakpoints.down("xs")]: {
             fontSize: "1.3rem",
-            marginBottom: 0,
+            marginBottom: 40,
             marginLeft: 0,
         },
     },
-    imgBox: {
+    imgDesignBoxOuter: {
+        borderRadius: 10,
+        borderTopLeftRadius: 10,
+        background: "#68af5c",
+        width: '350px',
+        height: '350px',
         animation: "fadeIn ease 2s",
-        textAlign: "center",
-        // animationName: 'slideInRight',
-        // animationDuration: '1.5s',
-        // animationFillMode: 'both',
+        [theme.breakpoints.down("sm")]: {
+            position: 'relative',
+            margin: '0 auto 160px auto', 
+            left: '-30px',
+        },
+        [theme.breakpoints.down("xs")]: {
+            marginBottom: 125,
+            width: 200,
+            height: 200,
+        },
+    },
+    imgDesignBoxMiddle: {
+      borderRadius: 10,
+      background: "#009688",
+      position: "relative",
+      top: "30px",
+      left: "30px",
+      height: "100%",
+      width: "100%",
+    },
+    imgDesignBoxInner: {
+      borderRadius: 10,
+      position: "relative",
+      top: 30,
+      left: 30,
+      height: "100%",
+      width: "100%",
     },
     profileImage: {
         width: "80%",

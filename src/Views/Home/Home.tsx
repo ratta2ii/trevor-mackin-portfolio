@@ -5,44 +5,40 @@ import TechDisplay from "../../Components/TechDisplay/TechDisplay";
 import useStyles from "./HomeStyles";
 
 const Bio = () => {
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return (
-        <Box className={classes.root}>
-            <Box className="slideInRight animated">
-                <Typography className={classes.title}>
-                    welcome to trevormackin.com
-                </Typography>
+  return (
+    <Box className={classes.root}>
+      <Box className="slideInRight animated">
+        <Typography className={classes.title}>
+          welcome to trevormackin.com
+        </Typography>
+      </Box>
+      <Grid container>
+        {/* //! Left Main Grid */}
+        <Grid item xs={12} md={6} >
+          <Box className={classes.imgDesignBoxOuter} >
+            <Box className={classes.imgDesignBoxMiddle} >
+            <Box className={classes.imgDesignBoxInner} >
+                <img
+                  src={ProfileImage}
+                  alt="something"
+                  width="100%"
+                  style={{ borderRadius: 10, }}
+                />
+              </Box>
             </Box>
-            <Grid container>
-                <Grid
-                    item
-                    xs={12}
-                    sm={6}
-                    style={{
-                        // backgroundColor: "white",
-                        height: "50vh",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}
-                >
-                    <Box className={classes.imgBox}>
-                        <img
-                            className={classes.profileImage}
-                            src={ProfileImage}
-                            alt="bio pic"
-                        />
-                    </Box>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Grid item>
-                        <TechDisplay />
-                    </Grid>
-                </Grid>
-            </Grid>
-        </Box>
-    );
+          </Box>
+        </Grid>
+        {/* //! Right Main Grid */}
+        <Grid item xs={12} md={6}>
+          <Grid item>
+            <TechDisplay />
+          </Grid>
+        </Grid>
+      </Grid>
+    </Box>
+  );
 };
 
 export default Bio;
