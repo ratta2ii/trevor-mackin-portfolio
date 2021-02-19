@@ -49,7 +49,7 @@ const TechDisplay = () => {
     "devicon-css3-plain-wordmark",
     "devicon-javascript-plain",
     "devicon-nodejs-plain-wordmark",
-    "devicon-nodejs-plain",
+    "devicon-visualstudio-plain",
     "devicon-react-original-wordmark",
     "devicon-redux-original",
     "devicon-typescript-plain",
@@ -74,7 +74,7 @@ const TechDisplay = () => {
             ></i>
           </Box>
           <Typography className={classes.iconLabel}>
-            {ele.split("-")[1]}
+            {ele.split("-")[1] === "visualstudio" ? "visual studio" : ele.split("-")[1]}
           </Typography>
         </Grid>
       ))}

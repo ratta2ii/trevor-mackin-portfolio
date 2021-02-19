@@ -16,15 +16,15 @@ const Bio = () => {
       </Box>
       <Grid container>
         {/* //! Left Main Grid */}
-        <Grid item xs={12} md={6} >
-          <Box className={classes.imgDesignBoxOuter} >
-            <Box className={classes.imgDesignBoxMiddle} >
-            <Box className={classes.imgDesignBoxInner} >
+        <Grid item xs={12} md={6}>
+          <Box className={classes.imgDesignBoxOuter}>
+            <Box className={classes.imgDesignBoxMiddle}>
+              <Box className={classes.imgDesignBoxInner}>
                 <img
                   src={ProfileImage}
                   alt="something"
                   width="100%"
-                  style={{ borderRadius: 10, }}
+                  style={{ borderRadius: 10 }}
                 />
               </Box>
             </Box>

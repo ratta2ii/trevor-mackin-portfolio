@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { IProject } from "../../Models/IProject";
-import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,9 +17,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "100% 100%",
     width: "100%",
     height: 300,
-    boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+    boxShadow:
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
     [theme.breakpoints.down("lg")]: {
-      height: 250,
+      height: 230,
     },
     [theme.breakpoints.down("xs")]: {
       height: 200,
@@ -63,7 +63,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: 40,
     border: "1px solid #757575",
-    marginTop: -8
+    marginTop: -8,
+    boxShadow:
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
   },
   optionsBtns: {
     width: "50%",
@@ -79,6 +81,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 8,
     },
+  },
+  linkStyles: {
+    textDecoration: "none",
+    color: "#bdbdbd",
   },
 }));
 
@@ -96,7 +102,7 @@ const SingleProject: React.FC<IProps> = ({ project }) => {
         <Grid item xs={12} md={10}>
           <Box
             className={classes.imgContainer}
-            style={{ backgroundImage: `url(${project.mainImage})`, }}
+            style={{ backgroundImage: `url(${project.mainImage})` }}
           >
             <Box className={classes.overlayCon}>
               <Typography className={classes.projectTitle}>
@@ -104,21 +110,26 @@ const SingleProject: React.FC<IProps> = ({ project }) => {
               </Typography>
             </Box>
           </Box>
-          <Box className={classes.optionsBtnsCon} >
+          <Box className={classes.optionsBtnsCon}>
             <Button
               className={classes.optionsBtns}
-              style={{backgroundColor: "#186a92", }}
+              style={{ backgroundColor: "#186a92" }}
             >
               Description
             </Button>
-            <Link
-              component={Button}
-              to={project.gitHubRepo}
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#68af5c", }}
+            <a
+              className={classes.linkStyles}
+              href={project.gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              GitHub Repo
-            </Link>
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#68af5c" }}
+              >
+                GitHub Repo
+              </Button>
+            </a>
           </Box>
           <Box>
             <Typography className={classes.techsUsed}>

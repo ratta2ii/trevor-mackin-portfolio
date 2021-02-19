@@ -68,22 +68,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: "2rem",
       marginBottom: 0,
-      marginLeft: '8%',
+      marginLeft: "8%",
     },
   },
   imgContainer: {
     width: "100%",
     margin: "auto",
     backgroundColor: "#555555",
-    boxShadow: '0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)',
+    boxShadow:
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
   },
   projectImg: {
     width: "100%",
-    // opacity: .5,
-    // "&:hover": {
-    //     opacity: 0.9,
-    //     transition: "3s",
-    // },
   },
   techsUsedTop: {
     fontSize: 15,
@@ -123,13 +119,15 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: 40,
     marginTop: -5,
+    boxShadow:
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
   },
   optionsBtns: {
     width: "33.3%",
     height: "100%",
     backgroundColor: "#757676",
     fontSize: 11,
-    outline: '2px solid #1f2123',
+    outline: "2px solid #1f2123",
     color: "white",
     borderRadius: 0,
     fontWeight: 500,
@@ -139,6 +137,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 8,
     },
+  },
+  linkStyles: {
+    textDecoration: "none",
+    color: "#bdbdbd",
   },
 }));
 
@@ -156,9 +158,16 @@ const FeaturedProject = () => {
     {
       name: "Movie Ratings App",
       techUsed: "JavaScript | React | Redux | Firebase | Material-UI",
-      mainImage: AzProjectImg,
-      gitHubRepo: "https://github.com/ratta2ii/movie_night_app",
-      liveSite: "https://ratta2ii.github.io/movie_night_app/#/",
+      mainImage: RatingsProjectImg,
+      gitHubRepo: "https://github.com/ratta2ii/movie-ratings-app",
+      liveSite: "https://ratta2ii.github.io/movie-ratings-app/#/",
+    },
+    {
+      name: "Trevor Mackin Portfolio",
+      techUsed: "JavaScript | React | TypeScript | Material-UI",
+      mainImage: PortfolioProjectImg,
+      gitHubRepo: "https://github.com/ratta2ii/trevor-mackin-portfolio",
+      liveSite: "https://trevormackin.com",
     },
   ];
 
@@ -166,13 +175,13 @@ const FeaturedProject = () => {
     <Box className={classes.root}>
       <Grid container>
         {/* Left Main Grid Container */}
-        <Grid item xs={12} md={1} >
+        <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
             <Typography className={classes.title}>Featured</Typography>
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
-        <Grid item xs={12} md={10} alignItems="center" >
+        <Grid item xs={12} md={10} alignItems="center">
           <Box>
             <Typography className={classes.techsUsedTop}>
               {projects[0].techUsed}
@@ -181,18 +190,26 @@ const FeaturedProject = () => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={AzProjectImg}
+              src={projects[0].mainImage}
               alt="project homepage screen-grab"
             />
           </Box>
           {/* //! Buttton Group Below */}
           <Box className={classes.optionsBtnsCon}>
-            <Button
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#e57373" }}
+            <a
+              className={classes.linkStyles}
+              href={projects[0].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Live
-            </Button>
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#e57373" }}
+              >
+                View Live
+              </Button>
+            </a>
+
             <Button
               className={classes.optionsBtns}
               style={{
@@ -201,19 +218,27 @@ const FeaturedProject = () => {
             >
               Description
             </Button>
-            <Button
-              className={classes.optionsBtns}
-              style={{
-                width: "33.4%",
-                backgroundColor: "#68af5c",
-              }}
+
+            <a
+              className={classes.linkStyles}
+              href={projects[0].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              GitHub Repo
-            </Button>
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  width: "33.4%",
+                  backgroundColor: "#68af5c",
+                }}
+              >
+                GitHub Repo
+              </Button>
+            </a>
           </Box>
           <Box>
             <Typography className={classes.techsUsedBottom}>
-              AZ Movie Nights: {projects[0].techUsed}
+              {projects[0].techUsed}
             </Typography>
           </Box>
         </Grid>
@@ -226,13 +251,7 @@ const FeaturedProject = () => {
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}></Grid>
         {/* Right Main Grid Container */}
-        <Grid
-          item
-          xs={12}
-          md={10}
-          
-          alignItems="center"
-        >
+        <Grid item xs={12} md={10} alignItems="center">
           <Box>
             <Typography
               className={classes.techsUsedTop}
@@ -244,33 +263,49 @@ const FeaturedProject = () => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={RatingsProjectImg}
+              src={projects[1].mainImage}
               alt="project homepage screen-grab"
             />
           </Box>
           {/* //! Buttton Group Below */}
           <Box className={classes.optionsBtnsCon}>
-            <Button
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#e57373" }}
+            <a
+              className={classes.linkStyles}
+              href={projects[1].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Live
-            </Button>
-            <Button
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#186a92", }}
-            >
-              Description
-            </Button>
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#e57373" }}
+              >
+                View Live
+              </Button>
+            </a>
             <Button
               className={classes.optionsBtns}
               style={{
-                width: "33.4%",
-                backgroundColor: "#68af5c", 
+                backgroundColor: "#186a92",
               }}
             >
-              GitHub Repo
+              Description
             </Button>
+            <a
+              className={classes.linkStyles}
+              href={projects[1].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  width: "33.4%",
+                  backgroundColor: "#68af5c",
+                }}
+              >
+                GitHub Repo
+              </Button>
+            </a>
           </Box>
           <Box>
             <Typography className={classes.techsUsedBottom}>
@@ -278,7 +313,7 @@ const FeaturedProject = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={1} >
+        <Grid item xs={12} md={1}>
           <Box className={classes.featuredConTwo}>
             <Typography className={classes.title}>Featured</Typography>
           </Box>
@@ -288,7 +323,7 @@ const FeaturedProject = () => {
       {/* //! Project #3 (Portfolio) */}
       <Grid container>
         {/* Left Main Grid Container */}
-        <Grid item xs={12} md={1} >
+        <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
             <Typography className={classes.title}>Portfolio</Typography>
           </Box>
@@ -303,43 +338,59 @@ const FeaturedProject = () => {
         >
           <Box>
             <Typography className={classes.techsUsedTop}>
-              {projects[0].techUsed}
+              {projects[2].techUsed}
             </Typography>
           </Box>
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={PortfolioProjectImg}
+              src={projects[2].mainImage}
               alt="project homepage screen-grab"
             />
           </Box>
           {/* //! Buttton Group Below */}
           <Box className={classes.optionsBtnsCon}>
-            <Button
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#e57373", }}
+            <a
+              className={classes.linkStyles}
+              href={projects[2].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Live
-            </Button>
-            <Button
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#186a92", }}
-            >
-              Description
-            </Button>
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#e57373" }}
+              >
+                View Live
+              </Button>
+            </a>
             <Button
               className={classes.optionsBtns}
               style={{
-                width: "33.4%",
-                backgroundColor: "#68af5c",
+                backgroundColor: "#186a92",
               }}
             >
-              GitHub Repo
+              Description
             </Button>
+            <a
+              className={classes.linkStyles}
+              href={projects[2].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  width: "33.4%",
+                  backgroundColor: "#68af5c",
+                }}
+              >
+                GitHub Repo
+              </Button>
+            </a>
           </Box>
           <Box>
             <Typography className={classes.techsUsedBottom}>
-              {projects[0].techUsed}
+              {projects[2].techUsed}
             </Typography>
           </Box>
         </Grid>
