@@ -30,13 +30,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
-    [theme.breakpoints.down("xs")]: {
-      display: "inline-block",
-      width: 50,
-      position: "fixed",
-      top: 15,
-      right: 25,
-    },
   },
   navLinkContainer: {
     color: "#29373d",
@@ -119,14 +112,6 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
             >
               <Typography>Projects</Typography>
             </MenuItem>
-            <MenuItem
-              component={Link}
-              to="/contact"
-              selected={"/contact" === pathname}
-              className={classes.menuItems}
-            >
-              <Typography>Contact</Typography>
-            </MenuItem>
             <MenuItem className={classes.menuItems}>
               <a
                 className={classes.linkStyles}
@@ -146,6 +131,14 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
               >
                 GitHub
               </a>
+            </MenuItem>
+            <MenuItem
+              component={Link}
+              to="/contact"
+              selected={"/contact" === pathname}
+              className={classes.menuItems}
+            >
+              <Typography>Contact</Typography>
             </MenuItem>
           </MenuList>
         </Box>

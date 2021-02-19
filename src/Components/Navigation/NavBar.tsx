@@ -48,10 +48,10 @@ const NavBar = () => {
           onClose={handleDrawerToggle}
           open={mobileOpen}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: false, // Better open performance on mobile.
           }}
         >
-          <DrawerLinks />
+          <DrawerLinks drawerToggle={handleDrawerToggle} />
         </Drawer>
       </nav>
       {/* necessary for content to be below app bar */}
