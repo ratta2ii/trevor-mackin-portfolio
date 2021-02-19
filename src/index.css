@@ -25,6 +25,30 @@ code {
   height: 5px;
 }
 
+/* Removes visual scrollbar at all times (Revist this at a later point) */
+::-webkit-scrollbar {
+  -webkit-appearance: auto;
+  width: 0;
+}
+
+.Mui-selected {
+  border-bottom: 7px solid red !important;
+  color: #fafafa !important;
+  background-color: #1e2123 !important;
+}
+
+.MuiSvgIcon-root {
+  width: 2em !important;
+  font-size: 2rem !important;
+}
+
+/* Mobile drawer */
+.MuiDrawer-paper {
+  width: 200px !important;
+  color: #555050 !important;
+  background-color: #1e2123 !important;
+}
+
 .wrap {
   overflow-x: hidden;
 }
@@ -36,18 +60,6 @@ code {
 .animated {
   animation-duration: 1.5s;
   animation-fill-mode: both;
-}
-
-/* Removes visual scrollbar at all times (Revist this at a later point) */
-::-webkit-scrollbar {
-  -webkit-appearance: auto;
-  width: 0;
-}
-
-.Mui-selected {
-  border-bottom: 7px solid red !important;
-  color: #fafafa !important;
-  background-color: #1e2123 !important;
 }
 
 @keyframes slideInRight {

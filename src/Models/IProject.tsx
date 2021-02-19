@@ -4,5 +4,5 @@ export interface IProject {
   mainImage: any;
   gitHubRepo: string;
   liveSite: string;
-  description: string;
+  description: any;
 }
