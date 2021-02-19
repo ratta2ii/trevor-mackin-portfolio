@@ -26,17 +26,28 @@ const useStyles = makeStyles((theme) => ({
     float: "right",
     marginRight: 25,
     [theme.breakpoints.down("sm")]: {
-      padding: 0,
+      paddingLeft: 25,
       marginBottom: -15,
       width: "100%",
-      marginLeft: 25,
+      
     },
     [theme.breakpoints.down("xs")]: {
+      paddingLeft: 0,
       marginBottom: 0,
       fontSize: 20,
     },
   },
-  featuredConTwo: {
+  featuredCon2: {
+    display: 'none',
+    [theme.breakpoints.down("sm")]: {
+      width: '100%',
+      display: "block",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: -25,
+    },
+  },
+  featuredCon3: {
     width: 30,
     height: "100%",
     display: "flex",
@@ -58,12 +69,12 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "uppercase",
     [theme.breakpoints.down("md")]: {},
     [theme.breakpoints.down("sm")]: {
-      fontSize: "3rem",
+      fontSize: "2rem",
       marginBottom: 10,
       textTransform: "capitalize",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
       marginBottom: 0,
       marginLeft: "8%",
     },
@@ -71,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   imgContainer: {
     width: "100%",
     margin: "auto",
-    backgroundColor: "#555555",
+    backgroundColor: "#ffffff",
     boxShadow:
       "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
   },
@@ -145,3 +156,5 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default useStyles;
+
+

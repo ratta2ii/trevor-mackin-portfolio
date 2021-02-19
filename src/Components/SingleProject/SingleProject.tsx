@@ -29,7 +29,7 @@ const SingleProject: React.FC<IProps> = ({ project, displayDetails }) => {
           <Box className={classes.optionsBtnsCon}>
             <Button
               className={classes.optionsBtns}
-              onClick={() => displayDetails(project.description)}
+              onClick={() => displayDetails(project)}
               style={{ backgroundColor: "#186a92" }}
             >
               Details

@@ -2,9 +2,10 @@ import React from "react";
 import { Box, Button, Divider, Grid, Typography } from "@material-ui/core";
 import useStyles from "./FeaturedProjectsStyles";
 import { featuredProjectsArr } from "../../Data/Projects";
+import { IProject } from './../../Models/IProject';
 
 interface IProps {
-  displayDetails: any;
+  displayDetails: (project: IProject) => void;
 }
 
 const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
@@ -50,7 +51,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             </a>
             <Button
               className={classes.optionsBtns}
-              onClick={() => displayDetails(featuredProjectsArr[0].description)}
+              onClick={() => displayDetails(featuredProjectsArr[0])}
               style={{
                 backgroundColor: "#186a92",
               }}
@@ -88,6 +89,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}></Grid>
+      
         {/* Right Main Grid Container */}
         <Grid item xs={12} md={10}>
           <Box>
@@ -97,6 +99,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               {featuredProjectsArr[1].techUsed}
             </Typography>
+          </Box>
+          <Box className={classes.featuredCon2}>
+              <Typography className={classes.title}>Featured</Typography>
           </Box>
           <Box className={classes.imgContainer}>
             <img
@@ -122,7 +127,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             </a>
             <Button
               className={classes.optionsBtns}
-              onClick={() => displayDetails(featuredProjectsArr[1].description)}
+              onClick={() => displayDetails(featuredProjectsArr[1])}
               style={{
                 backgroundColor: "#186a92",
               }}
@@ -153,7 +158,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
         </Grid>
         <Grid item xs={12} md={1}>
-          <Box className={classes.featuredConTwo}>
+          <Box className={classes.featuredCon3}>
             <Typography className={classes.title}>Featured</Typography>
           </Box>
         </Grid>
@@ -198,7 +203,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             </a>
             <Button
               className={classes.optionsBtns}
-              onClick={() => displayDetails(featuredProjectsArr[2].description)}
+              onClick={() => displayDetails(featuredProjectsArr[2])}
               style={{
                 backgroundColor: "#186a92",
               }}
