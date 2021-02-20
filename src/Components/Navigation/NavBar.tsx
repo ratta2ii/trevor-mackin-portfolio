@@ -12,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
     height: 120,
     borderBottom: "10px solid #2196f3",
     [theme.breakpoints.down("xs")]: {
-      height: 80,
-      borderBottom: 0,
+      height: 100,
     },
   },
   title: {

@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       width: "95%",
     },
     [theme.breakpoints.down("sm")]: {
-      padding: "20px 5% 0 5%",
+      padding: "0 5% 0 5%",
     },
   },
   title: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.3rem",
-      marginBottom: 60,
+      marginBottom: 65,
       marginLeft: 0,
     },
   },
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       position: "relative",
       margin: "0 auto 160px auto",
-      left: "-30px",
+      left: "-32px",
     },
     [theme.breakpoints.down("xs")]: {
       marginBottom: 125,

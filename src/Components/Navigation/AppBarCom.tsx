@@ -14,10 +14,9 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     justifyContent: "center",
-    // backgroundColor: "#0d0e0e",
     backgroundColor: '#000000',
     [theme.breakpoints.down("xs")]: {
-      backgroundColor: "#2196f3",
+      
     },
   },
   menuButton: {
@@ -32,6 +31,12 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 15,
     [theme.breakpoints.down("sm")]: {
       display: "none",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "block",
+      width: 70,
+      marginRight: 8,
+      opacity: 1,
     },
   },
   navLinkContainer: {
@@ -50,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
   linkStyles: {
     textDecoration: "none",
     color: "#bdbdbd",
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: "auto",
+    },
   },
   menuList: {
     float: "left",
