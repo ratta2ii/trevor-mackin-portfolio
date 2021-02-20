@@ -9,6 +9,7 @@ export const StyledIcon = styled.i`
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    animation: "fadeIn ease .5s",
     [theme.breakpoints.down("xs")]: {
       padding: "0 7%",
     },

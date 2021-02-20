@@ -26,15 +26,16 @@ code {
 }
 
 /* Removes visual scrollbar at all times (Revist this at a later point) */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   -webkit-appearance: auto;
-  width: 0;
-} */
+  width: 0; 
+}
 
 .Mui-selected {
   border-bottom: 7px solid red !important;
   color: #fafafa !important;
-  background-color: #1e2123 !important;
+  /* background-color: #0d0e0e !important; */
+  background-color: #000000 !important;
 }
 
 .MuiSvgIcon-root {

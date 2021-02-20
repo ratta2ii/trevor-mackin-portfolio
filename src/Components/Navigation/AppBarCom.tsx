@@ -5,7 +5,8 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Box from "@material-ui/core/Box";
-import LinkedInIcon from "./../../assets/linkedIn_Icon.png";
+// import LinkedInIcon from "./../../assets/linkedIn_Icon.png";
+import LinkedInIcon from "./../../assets/logo192edit.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { MenuItem, MenuList, Typography } from "@material-ui/core";
 
@@ -13,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "#1e2123",
+    // backgroundColor: "#0d0e0e",
+    backgroundColor: '#000000',
     [theme.breakpoints.down("xs")]: {
       backgroundColor: "#2196f3",
     },
@@ -25,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   linkedInIcon: {
-    width: 50,
+    opacity: 0.8,
+    width: 90,
     marginLeft: 15,
     [theme.breakpoints.down("sm")]: {
       display: "none",

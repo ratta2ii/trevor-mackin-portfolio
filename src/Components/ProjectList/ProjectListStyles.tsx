@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "4rem",
+    fontSize: "3rem",
     textAlign: "center",
     marginBottom: 100,
     [theme.breakpoints.down("md")]: {},
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       textTransform: "capitalize",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
       marginBottom: 45,
     },
   },

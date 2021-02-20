@@ -1,3 +1,9 @@
+### Trevor Mackin Portfolio
+icons: https://devicon.dev/
+background: #1e2 123 (soft grayish almost brown)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
