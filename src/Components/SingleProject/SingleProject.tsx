@@ -30,7 +30,7 @@ const SingleProject: React.FC<IProps> = ({ project, displayDetails }) => {
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(project)}
-              style={{ backgroundColor: "#186a92" }}
+              style={{ backgroundColor: "#1973ba" }}
             >
               Details
             </Button>

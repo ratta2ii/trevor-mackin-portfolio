@@ -44,7 +44,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               <Button
                 className={classes.optionsBtns}
-                style={{ backgroundColor: "#e57373" }}
+                style={{ backgroundColor: "#919191" }}
               >
                 View Live
               </Button>
@@ -53,7 +53,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[0])}
               style={{
-                backgroundColor: "#186a92",
+                backgroundColor: "#6c6c6c",
               }}
             >
               Details
@@ -68,7 +68,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#68af5c",
+                  backgroundColor: "#6c6c6c",
                 }}
               >
                 GitHub
@@ -120,7 +120,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               <Button
                 className={classes.optionsBtns}
-                style={{ backgroundColor: "#e57373" }}
+                style={{ backgroundColor: "#919191" }}
               >
                 View Live
               </Button>
@@ -129,7 +129,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[1])}
               style={{
-                backgroundColor: "#186a92",
+                backgroundColor: "#6c6c6c",
               }}
             >
               Details
@@ -144,7 +144,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#68af5c",
+                  backgroundColor: "#6c6c6c",
                 }}
               >
                 GitHub
@@ -196,7 +196,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               <Button
                 className={classes.optionsBtns}
-                style={{ backgroundColor: "#e57373" }}
+                style={{ backgroundColor: "#919191" }}
               >
                 View Live
               </Button>
@@ -205,7 +205,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[2])}
               style={{
-                backgroundColor: "#186a92",
+                backgroundColor: "#6c6c6c",
               }}
             >
               Details
@@ -220,7 +220,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#68af5c",
+                  backgroundColor: "#6c6c6c",
                 }}
               >
                 GitHub
