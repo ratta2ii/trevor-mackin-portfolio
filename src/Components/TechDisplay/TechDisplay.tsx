@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme) => ({
       width: 100,
     },
     [theme.breakpoints.down("sm")]: {
-      margin: "2px auto",
+        height: 130,
+        width: 130,
+        margin: "2px auto",
     },
     [theme.breakpoints.down("xs")]: {
       margin: "2px auto",
@@ -41,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   testIcon: {
-    fontSize: 55,
+    fontSize: 45,
     [theme.breakpoints.down("xs")]: {
         fontSize: 35,
     },
