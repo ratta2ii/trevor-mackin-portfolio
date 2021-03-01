@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   iconBox: {
-    border: "2px solid #186a92",
+    border: "1px solid #2196f3c9",
     borderRadius: "50%",
     height: 120,
     width: 120,

@@ -173,7 +173,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
-        <Grid item xs={12} md={10} style={{ backgroundColor: "#1e2123" }}>
+        <Grid item xs={12} md={10} style={{ backgroundColor: "#0e0f0f" }}>
           <Box>
             <Typography className={classes.techsUsedTop}>
               {featuredProjectsArr[2].techUsed}
