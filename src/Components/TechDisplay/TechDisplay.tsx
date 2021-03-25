@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   iconBox: {
-    border: "2px solid #186a92",
+    border: "1px solid #2196f3c9",
     borderRadius: "50%",
     height: 120,
     width: 120,
@@ -18,10 +18,14 @@ const useStyles = makeStyles((theme) => ({
       width: 100,
     },
     [theme.breakpoints.down("sm")]: {
-      margin: "2px auto",
+        height: 130,
+        width: 130,
+        margin: "2px auto",
     },
     [theme.breakpoints.down("xs")]: {
       margin: "2px auto",
+      height: 80,
+      width: 80,
     },
   },
   iconLabel: {
@@ -33,7 +37,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
     animation: "fadeIn ease 5s",
     letterSpacing: 1,
+    [theme.breakpoints.down("sm")]: {
+        marginTop: 7,
+        left: 0,
+    },
   },
+  testIcon: {
+    fontSize: 45,
+    [theme.breakpoints.down("xs")]: {
+        fontSize: 35,
+    },
+  }
 }));
 
 const TechDisplay = () => {
@@ -49,14 +63,14 @@ const TechDisplay = () => {
     "devicon-css3-plain-wordmark",
     "devicon-javascript-plain",
     "devicon-nodejs-plain-wordmark",
-    "devicon-visualstudio-plain",
     "devicon-react-original-wordmark",
     "devicon-redux-original",
     "devicon-typescript-plain",
+    "devicon-visualstudio-plain",
     "devicon-csharp-plain-wordmark",
     "devicon-dot-net-plain-wordmark",
     "devicon-git-plain-wordmark colored",
-    "devicon-github-original-wordmark",
+    "devicon-firebase-plain",
   ];
 
   return (
@@ -65,10 +79,8 @@ const TechDisplay = () => {
         <Grid item xs={4} md={3} key={index}>
           <Box className={classes.iconBox}>
             <i
-              className={`${ele} colored`}
+              className={`${ele} colored ${classes.testIcon}`}
               style={{
-                fontSize: 55,
-                color: "#e57373",
                 animation: `fadeIn ease ${handleGiveRandomSecond()}s`,
               }}
             ></i>

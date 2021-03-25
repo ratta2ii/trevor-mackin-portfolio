@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#1e2123",
+    backgroundColor: "#0e0f0f",
     marginBottom: 100,
     marginTop: -10,
     padding: "0 3%",
@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     backgroundColor: "#757676",
     fontSize: 11,
-    outline: "2px solid #1f2123",
+    outline: "1px solid #1f2123",
     color: "white",
     borderRadius: 0,
     fontWeight: 500,

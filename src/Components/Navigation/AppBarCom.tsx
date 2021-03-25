@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
   menuList: {
     float: "left",
     outline: "0 !important",
+    marginLeft: 50,
   },
   menuItems: {
     float: "left",
@@ -131,16 +132,6 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
                 rel="noopener noreferrer"
               >
                 Resume
-              </a>
-            </MenuItem>
-            <MenuItem className={classes.menuItems}>
-              <a
-                className={classes.linkStyles}
-                href="https://github.com/ratta2ii"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
               </a>
             </MenuItem>
             <MenuItem

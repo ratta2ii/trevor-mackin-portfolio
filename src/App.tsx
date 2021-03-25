@@ -9,7 +9,7 @@ import Error404 from "./Views/Error404/Error404";
 
 const App = () => {
   return (
-    <Box style={{ backgroundColor: "#1e2123" }}>
+    <Box style={{ backgroundColor: "#0e0f0f" }}>
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />

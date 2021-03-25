@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1100,
     margin: "auto",
     marginTop: 65,
-    backgroundColor: "#1e2123",
+    backgroundColor: "#0e0f0f",
     overflowX: "hidden",
     [theme.breakpoints.down("md")]: {
       width: "95%",

@@ -1,7 +1,7 @@
 import { IProject } from "../Models/IProject";
-import AzProjectImg from "./../assets/az_project.png";
+import AzProjectImg from "./../assets/movie_nights_screenshot.png";
 import RatingsProjectImg from "./../assets/ratings_project.png";
-import PortfolioProjectImg from "./../assets/portfolio_project.png";
+import PortfolioProjectImg from "./../assets/portfolio_screenshot2.png";
 
 export const featuredProjectsArr: IProject[] = [
   {
