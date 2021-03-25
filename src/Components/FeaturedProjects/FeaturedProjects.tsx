@@ -153,7 +153,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
           <Box>
             <Typography className={classes.techsUsedBottom}>
-              AZ Movie Nights: {featuredProjectsArr[0].techUsed}
+              {featuredProjectsArr[0].techUsed}
             </Typography>
           </Box>
         </Grid>

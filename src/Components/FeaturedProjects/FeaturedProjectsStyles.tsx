@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     backgroundColor: "#757676",
     fontSize: 11,
-    outline: "2px solid #1f2123",
+    outline: "1px solid #1f2123",
     color: "white",
     borderRadius: 0,
     fontWeight: 500,

@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 11,
     color: "white",
     borderRadius: 0,
-    outline: "2px solid #1f2123",
+    outline: "1px solid #1f2123",
     fontWeight: 500,
     "&:hover": {
       backgroundColor: "#898a8a",

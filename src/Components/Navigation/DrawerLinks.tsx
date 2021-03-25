@@ -31,7 +31,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#9fc9ea",
   },
   listItemText: {
-    fontWeight: 200,
+    fontWeight: 600,
+    color: "salmon",
+    marginTop: 3,
   },
 }));
 
