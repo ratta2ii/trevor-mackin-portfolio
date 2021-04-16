@@ -100,9 +100,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               {featuredProjectsArr[1].techUsed}
             </Typography>
           </Box>
-          <Box className={classes.featuredCon2}>
-              <Typography className={classes.title}>Featured</Typography>
-          </Box>
+          {/* <Box className={classes.featuredCon2}>
+              <Typography className={classes.title}>Featured#2</Typography>
+          </Box> */}
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
@@ -158,9 +158,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
         </Grid>
         <Grid item xs={12} md={1}>
-          <Box className={classes.featuredCon3}>
+          {/* <Box className={classes.featuredCon3}>
             <Typography className={classes.title}>Featured</Typography>
-          </Box>
+          </Box> */}
         </Grid>
       </Grid>
       <Divider className={classes.divider}></Divider>
