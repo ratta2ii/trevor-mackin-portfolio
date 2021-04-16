@@ -9,15 +9,16 @@ import {
 } from "@material-ui/core";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import CancelIcon from '@material-ui/icons/Cancel';
 import HomeIcon from "@material-ui/icons/Home";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import SystemUpdateAltIcon from "@material-ui/icons/SystemUpdateAlt";
+//import GitHubIcon from "@material-ui/icons/GitHub";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#181a1a",
     marginTop: 75,
     paddingBottom: 50,
   },
@@ -28,11 +29,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#555050",
   },
   icons: {
-    color: "#9fc9ea",
+    color: "#74c2ff",
+    height: 20,
+  },
+  cancelIcon: {
+    color: "#ef5350",
+    height: 23,
   },
   listItemText: {
-    fontWeight: 600,
-    color: "salmon",
+    fontSize: ".9rem",
+    letterSpacing: "0.03rem",
+    fontWeight: 500,
+    color: "#fff1f0",
     marginTop: 3,
   },
 }));
@@ -73,7 +81,8 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
             <Typography className={classes.listItemText}>Resume</Typography>
           </ListItem>
         </a>
-        <a
+        {/* GitHub (This info is under the Contact Info already) */}
+        {/* <a
           className={classes.linkStyles}
           href="https://github.com/ratta2ii"
           target="_blank"
@@ -85,7 +94,7 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
             </ListItemIcon>
             <Typography className={classes.listItemText}>GitHub</Typography>
           </ListItem>
-        </a>
+        </a> */}
         <a
           className={classes.linkStyles}
           href="https://www.linkedin.com/in/trevor-mackin/"
@@ -104,6 +113,12 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
             <ContactMailIcon className={classes.icons} />
           </ListItemIcon>
           <Typography className={classes.listItemText}>Contact</Typography>
+        </ListItem>
+        <ListItem button key="Close">
+          <ListItemIcon>
+            <CancelIcon className={classes.cancelIcon} />
+          </ListItemIcon>
+          <Typography className={classes.listItemText}>Close</Typography>
         </ListItem>
       </List>
     </Box>

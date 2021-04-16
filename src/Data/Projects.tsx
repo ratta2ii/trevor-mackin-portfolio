@@ -1,5 +1,6 @@
 import { IProject } from "../Models/IProject";
-import PortfolioProjectImg from "./../assets/portfolio_screenshot2.png";
+
+const PortfolioProjectImgSmall  = "/assets/Images/portfolio_homepage_small.png";
 
 export const featuredProjectsArr: IProject[] = [
   {
@@ -102,7 +103,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Pierres Treats",
     techUsed: "C# | APS.NET | Identity | Razor | Entity",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/PierresTreats.Solution",
     liveSite: "",
     description:
@@ -111,7 +112,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Hair Salon",
     techUsed: "C# | APS.NET | Identity | Razor | Entity",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/HairSalon.Solution",
     liveSite: "",
     description:
@@ -120,7 +121,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Hiking Trails App",
     techUsed: "JavaScript | React | HTML | CSS",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/hiking-trails-app",
     liveSite: "",
     description: "",
@@ -128,7 +129,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Animal Shelter",
     techUsed: "C# | APS.NET | Razor | Entity | MySQLite | Swagger",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/AnimalShelterApi.Solution",
     liveSite: "",
     description:
@@ -137,7 +138,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Cretaceous Park",
     techUsed: "C# | ASP.NET | Entity",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/CretaceousPark.Solution",
     liveSite: "",
     description: "",
@@ -145,7 +146,7 @@ export const projectsArray: IProject[] = [
   {
     name: "MVC API Calls",
     techUsed: "C# | ASP.NET",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/MvcApiCall.Solution",
     liveSite: "",
     description: "",
@@ -153,7 +154,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Pizza Shop",
     techUsed: "JavaScript | React | HTML | CSS",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/pizza-shop",
     liveSite: "",
     description: "",
@@ -161,7 +162,7 @@ export const projectsArray: IProject[] = [
   {
     name: "Beer Shack",
     techUsed: "JavaScript | React | Webpack",
-    mainImage: PortfolioProjectImg,
+    mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/beerShack-react",
     liveSite: "",
     description:

@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, Typography } from "@material-ui/core";
-import ProfileImage from "./../../assets/profile_pic_baw.jpg";
 import TechDisplay from "../../Components/TechDisplay/TechDisplay";
 import useStyles from "./HomeStyles";
 
@@ -21,8 +20,8 @@ const Bio = () => {
             <Box className={classes.imgDesignBoxMiddle}>
               <Box className={classes.imgDesignBoxInner}>
                 <img
-                  src={ProfileImage}
-                  alt="something"
+                  src="/assets/Images/profile_pic_baw.jpg"
+                  alt="portfolio creator"
                   width="100%"
                   style={{ borderRadius: 10 }}
                 />

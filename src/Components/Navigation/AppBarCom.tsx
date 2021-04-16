@@ -5,8 +5,6 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Box from "@material-ui/core/Box";
-// import LinkedInIcon from "./../../assets/linkedIn_Icon.png";
-import LinkedInIcon from "./../../assets/logo192edit.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { MenuItem, MenuList, Typography } from "@material-ui/core";
 
@@ -15,7 +13,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     backgroundColor: "#000000",
-    [theme.breakpoints.down("xs")]: {},
+    [theme.breakpoints.down("xs")]: {
+        overflowX: "hidden",
+    },
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -106,21 +106,21 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
         >
           <MenuIcon />
         </IconButton>
-        <a
-          className={classes.linkStyles}
-          href="https://www.linkedin.com/in/trevor-mackin/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Box className={classes.tmLinkContainer}>
+        <Box className={classes.tmLinkContainer}>
+          <a
+            className={classes.linkStyles}
+            href="https://www.linkedin.com/in/trevor-mackin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={classes.linkedInIcon}
-              src={LinkedInIcon}
+              src="/assets/Images/logo192edit.png"
               alt="LinkedIn Icon hyperlink"
             />
             <Typography className={classes.linkedInText}>LinkedIn</Typography>
-          </Box>
-        </a>
+          </a>
+        </Box>
         <Box className={classes.navLinkContainer}>
           <MenuList className={classes.menuList}>
             <MenuItem
