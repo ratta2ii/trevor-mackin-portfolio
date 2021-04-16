@@ -30,12 +30,6 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 45,
     },
   },
-  titleSpan: {
-    fontSize: "1.5rem",
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
-    },
-  },
 }));
 
 export default useStyles;

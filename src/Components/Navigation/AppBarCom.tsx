@@ -14,10 +14,8 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     display: "flex",
     justifyContent: "center",
-    backgroundColor: '#000000',
-    [theme.breakpoints.down("xs")]: {
-      
-    },
+    backgroundColor: "#000000",
+    [theme.breakpoints.down("xs")]: {},
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -29,11 +27,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.8,
     width: 90,
     marginLeft: 15,
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
-    },
     [theme.breakpoints.down("xs")]: {
-      display: "block",
       width: 70,
       marginRight: 8,
       opacity: 1,
@@ -52,11 +46,29 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  tmLinkContainer: {
+    marginTop: 12,
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "block",
+      marginLeft: "auto",
+    },
+  },
   linkStyles: {
     textDecoration: "none",
     color: "#bdbdbd",
+  },
+  linkedInText: {
+    fontSize: ".6rem",
+    position: "relative",
+    top: -12,
+    left: 75,
+    color: "#e6171e",
     [theme.breakpoints.down("xs")]: {
-      marginLeft: "auto",
+      top: -10,
+      left: 50,
     },
   },
   menuList: {
@@ -100,11 +112,14 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            className={classes.linkedInIcon}
-            src={LinkedInIcon}
-            alt="LinkedIn Icon hyperlink"
-          />
+          <Box className={classes.tmLinkContainer}>
+            <img
+              className={classes.linkedInIcon}
+              src={LinkedInIcon}
+              alt="LinkedIn Icon hyperlink"
+            />
+            <Typography className={classes.linkedInText}>LinkedIn</Typography>
+          </Box>
         </a>
         <Box className={classes.navLinkContainer}>
           <MenuList className={classes.menuList}>

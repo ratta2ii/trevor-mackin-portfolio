@@ -22,13 +22,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "3.9rem",
-    marginBottom: "5%",
-    marginLeft: "8%",
-    [theme.breakpoints.down("md")]: {
-      fontSize: "3.2rem",
-      textAlign: "center",
-    },
+    fontSize: "3rem",
+    marginBottom: '7%',
+    textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       fontSize: "3rem",
       marginBottom: 70,

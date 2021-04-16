@@ -1,13 +1,11 @@
 import { IProject } from "../Models/IProject";
-import AzProjectImg from "./../assets/movie_nights_screenshot.png";
-import RatingsProjectImg from "./../assets/ratings_project.png";
 import PortfolioProjectImg from "./../assets/portfolio_screenshot2.png";
 
 export const featuredProjectsArr: IProject[] = [
   {
     name: "AZ Movie Nights",
     techUsed: "JavaScript | React | Redux | Material-UI",
-    mainImage: AzProjectImg,
+    mainImage: '/assets/Images/az_movie_nights_homepage.png',
     gitHubRepo: "https://github.com/ratta2ii/movie_night_app",
     liveSite: "https://ratta2ii.github.io/movie_night_app/#/",
     description: () => (
@@ -42,7 +40,7 @@ export const featuredProjectsArr: IProject[] = [
   {
     name: "Movie Ratings App",
     techUsed: "JavaScript | React | Redux | Firebase | Material-UI",
-    mainImage: RatingsProjectImg,
+    mainImage: '/assets/Images/movie_ratings_homepage.png',
     gitHubRepo: "https://github.com/ratta2ii/movie-ratings-app",
     liveSite: "https://ratta2ii.github.io/movie-ratings-app/#/",
     description: () => (
@@ -92,8 +90,8 @@ export const featuredProjectsArr: IProject[] = [
   },
   {
     name: "Trevor Mackin Portfolio",
-    techUsed: "JavaScript | React | TypeScript | Material-UI",
-    mainImage: PortfolioProjectImg,
+    techUsed: "JavaScript | TypeScript | React | Material-UI",
+    mainImage: '/assets/Images/portfolio_homepage.png',
     gitHubRepo: "https://github.com/ratta2ii/trevor-mackin-portfolio",
     liveSite: "https://trevormackin.com",
     description: "",

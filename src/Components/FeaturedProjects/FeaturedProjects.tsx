@@ -11,6 +11,11 @@ interface IProps {
 const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const classes = useStyles();
 
+  // Images are high resolution (slow loading), so this will attempt to keep the page from being
+  // so jumpy. I want the image to be all the way downloaded before rendering the component. I 
+  // will need to update this at a later date
+  if (!featuredProjectsArr[0].mainImage || !featuredProjectsArr[1].mainImage || !featuredProjectsArr[2].mainImage) return null;
+
   return (
     <Box className={classes.root}>
       <Grid container>
