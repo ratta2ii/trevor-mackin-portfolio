@@ -19,7 +19,7 @@ export const featuredProjectsArr: IProject[] = [
           100% responsive and built for both Mobile and Desktop.
         </p>
         <p>
-          Their are a small number of products that a user can choose from by
+          There are a small number of products that a user can choose from by
           clicking on an item. Once the user selects a product, a single page
           will be populated with the corresponding data. A user can then add
           this product to a shopping cart, view the entirety of their cart at
