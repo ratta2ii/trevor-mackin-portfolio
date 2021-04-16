@@ -35,7 +35,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={featuredProjectsArr[0].mainImage}
+              // src={featuredProjectsArr[0].mainImage}
+              src="/assets/Images/az_movie_nights_homepage.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -111,7 +112,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={featuredProjectsArr[1].mainImage}
+              // src={featuredProjectsArr[1].mainImage}
+              src="/assets/Images/movie_ratings_homepage.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -187,7 +189,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              src={featuredProjectsArr[2].mainImage}
+              // src={featuredProjectsArr[2].mainImage}
+              src="/assets/Images/portfolio_homepage.png"
               alt="project homepage screen-grab"
             />
           </Box>
