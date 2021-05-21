@@ -1,6 +1,6 @@
-import { Box } from "@material-ui/core";
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { Box } from "@material-ui/core";
 import NavBar from "./Components/Navigation/NavBar";
 import Home from "./Views/Home/Home";
 import Projects from "./Views/Projects/Projects";

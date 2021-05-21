@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   iconLabel: {
-    color: "#ffe7c3",
+    color: "#bfbfbf91",
     textAlign: "center",
     marginBottom: 30,
     position: "relative",

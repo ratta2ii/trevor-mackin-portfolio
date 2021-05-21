@@ -1,12 +1,12 @@
 import { IProject } from "../Models/IProject";
 
-const PortfolioProjectImgSmall  = "/assets/Images/portfolio_homepage_small.png";
+const PortfolioProjectImgSmall = "/assets/Images/portfolio_homepage_small.png";
 
 export const featuredProjectsArr: IProject[] = [
   {
     name: "AZ Movie Nights",
     techUsed: "JavaScript | React | Redux | Material-UI",
-    mainImage: '/assets/Images/az_movie_nights_homepage.png',
+    mainImage: "/assets/Images/az_movie_nights_homepage.png",
     gitHubRepo: "https://github.com/ratta2ii/movie_night_app",
     liveSite: "https://ratta2ii.github.io/movie_night_app/#/",
     description: () => (
@@ -27,7 +27,7 @@ export const featuredProjectsArr: IProject[] = [
           list of products.
         </p>
         <p>
-          When a user has decided that they have slected all relevant products,
+          When a user has decided that they have selected all relevant products,
           a user will then head to checkout where they will see their total
           costs, with taxes. The checkout form will include personal
           information, the day and time of the event, and any message the user
@@ -39,9 +39,45 @@ export const featuredProjectsArr: IProject[] = [
     ),
   },
   {
+    name: "MERN Stack Authentication",
+    techUsed:
+      "MongoDB | Express | React | Node.js | TypeScript | MobX | Passport.js",
+    mainImage: "/assets/Images/screenshot-login.png",
+    gitHubRepo: "https://github.com/ratta2ii/mern-stack-authorization",
+    liveSite: "https://mern-stack-authentication.herokuapp.com",
+    description: () => (
+      <div>
+        <p>
+          This application is a way to demonstrate a working knowledge of
+          authentication, and authorization, at different security levels. The
+          login services for the application include OAuth services, Salting and
+          Hashing, as well as Cookies and Sessions.
+        </p>
+        <p>
+          Google and Facebook OAuth strategies, w/ Passport.js middleware, are
+          only one of ways that a user can be authenticated. These particular
+          strategies work within the OAuth 2.0 protocols, and are also
+          considered the most secure for this application (Security level 6).
+        </p>
+        <p>
+          I have also added a "local" strategy as well, that allows a user to
+          register a new account by entering a username (email) and password
+          -instead of using the more secure OAuth services. The password will be
+          a salted, hashed password (Security level 4), that will be stored in a
+          MongoDB database.
+        </p>
+        <p>
+          In addition to the Auth services, the application also demonstrates a
+          working knowledge on how to both build, and deploy, a full-stack MERN
+          application.
+        </p>
+      </div>
+    ),
+  },
+  {
     name: "Movie Ratings App",
     techUsed: "JavaScript | React | Redux | Firebase | Material-UI",
-    mainImage: '/assets/Images/movie_ratings_homepage.png',
+    mainImage: "/assets/Images/movie_ratings_homepage.png",
     gitHubRepo: "https://github.com/ratta2ii/movie-ratings-app",
     liveSite: "https://ratta2ii.github.io/movie-ratings-app/#/",
     description: () => (
@@ -92,7 +128,7 @@ export const featuredProjectsArr: IProject[] = [
   {
     name: "Trevor Mackin Portfolio",
     techUsed: "JavaScript | TypeScript | React | Material-UI",
-    mainImage: '/assets/Images/portfolio_homepage.png',
+    mainImage: "/assets/Images/portfolio_homepage.png",
     gitHubRepo: "https://github.com/ratta2ii/trevor-mackin-portfolio",
     liveSite: "https://trevormackin.com",
     description: "",
@@ -101,7 +137,7 @@ export const featuredProjectsArr: IProject[] = [
 
 export const projectsArray: IProject[] = [
   {
-    name: "Pierres Treats",
+    name: "Pierre's Treats",
     techUsed: "C# | APS.NET | Identity | Razor | Entity",
     mainImage: PortfolioProjectImgSmall,
     gitHubRepo: "https://github.com/ratta2ii/PierresTreats.Solution",
@@ -117,6 +153,26 @@ export const projectsArray: IProject[] = [
     liveSite: "",
     description:
       "This is a server-side application built in C# using the ASP.NET Core Framework. The project focuses on connecting to a database using Entity Framework Core. The application is meant to be for a Salon owner to keep track of their stylists, and the clients that belong to each stylist individually. When a user runs the application, they should be welcomed on the landing page and given a link to view all stylist. From here, the user should be able to navigate to a page showing all the stylists with CRUD functionality, allowing a user to Add, Edit and Delete a stylist. When the user clicks on a particular stylist they will be presented with a list of clients for that specific stylist. From the list of clients, a user can then click on a specific client to view further details of the client as well. The application also provides all CRUD functionality for each of the clients.",
+  },
+  {
+    name: "Reactivities",
+    techUsed: "C# | .NET5.0 | React | TypeScript | MobX | EF Core | Semantic UI",
+    mainImage: PortfolioProjectImgSmall,
+    gitHubRepo: "https://github.com/ratta2ii/reactivities",
+    liveSite: "",
+    description: "",
+  },
+  {
+    name: "Secrets-Authentication",
+    techUsed: "JavaScript | Node.js | Express | MongoDB | Mongoose | Passport.js",
+    mainImage: PortfolioProjectImgSmall,
+    gitHubRepo: "https://github.com/ratta2ii/secrets-authentication",
+    liveSite: "",
+    description: () => (
+      <div>
+        <a href="https://github.com/ratta2ii/secrets-authentication">Please view GitHub README.md for project details</a>
+      </div>
+    ),
   },
   {
     name: "Hiking Trails App",

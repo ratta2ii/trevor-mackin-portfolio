@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "block",
       marginLeft: "auto",
+      marginRight: 5,
     },
   },
   linkStyles: {

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Divider, Grid, Typography } from "@material-ui/core";
 import useStyles from "./FeaturedProjectsStyles";
 import { featuredProjectsArr } from "../../Data/Projects";
-import { IProject } from './../../Models/IProject';
+import { IProject } from "./../../Models/IProject";
 
 interface IProps {
   displayDetails: (project: IProject) => void;
@@ -12,9 +12,16 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const classes = useStyles();
 
   // Images are high resolution (slow loading), so this will attempt to keep the page from being
-  // so jumpy. I want the image to be all the way downloaded before rendering the component. I 
+  // so jumpy. I want the image to be all the way downloaded before rendering the component. I
   // will need to update this at a later date
-  if (!featuredProjectsArr[0].mainImage || !featuredProjectsArr[1].mainImage || !featuredProjectsArr[2].mainImage) return <p>Loading...</p>;
+  //* Loading Indicator (note: currently rendering an empty div)
+  if (
+    !featuredProjectsArr ||
+    !featuredProjectsArr[0].mainImage ||
+    !featuredProjectsArr[1].mainImage ||
+    !featuredProjectsArr[2].mainImage
+  )
+    return <div></div>;
 
   return (
     <Box className={classes.root}>
@@ -40,7 +47,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               alt="project homepage screen-grab"
             />
           </Box>
-          {/* //! Buttton Group Below */}
+          {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
             <a
               className={classes.linkStyles}
@@ -95,7 +102,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}></Grid>
-      
+
         {/* Right Main Grid Container */}
         <Grid item xs={12} md={10}>
           <Box>
@@ -113,11 +120,11 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             <img
               className={classes.projectImg}
               // src={featuredProjectsArr[1].mainImage}
-              src="/assets/Images/movie_ratings_homepage.png"
+              src="/assets/Images/screenshot-landing-page.png"
               alt="project homepage screen-grab"
             />
           </Box>
-          {/* //! Buttton Group Below */}
+          {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
             <a
               className={classes.linkStyles}
@@ -166,12 +173,92 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         </Grid>
         <Grid item xs={12} md={1}>
           {/* <Box className={classes.featuredCon3}>
-            <Typography className={classes.title}>Featured</Typography>
+            <Typography className={classes.title}>AuthN</Typography>
           </Box> */}
         </Grid>
       </Grid>
       <Divider className={classes.divider}></Divider>
-      {/* //! Project #3 (Portfolio) */}
+      {/* //! PROJECT #3 */}
+      <Grid container>
+        {/* Left Main Grid Container */}
+        <Grid item xs={12} md={1}></Grid>
+
+        {/* Right Main Grid Container */}
+        <Grid item xs={12} md={10}>
+          <Box>
+            <Typography
+              className={classes.techsUsedTop}
+              style={{ textAlign: "right" }}
+            >
+              {featuredProjectsArr[2].techUsed}
+            </Typography>
+          </Box>
+          {/* <Box className={classes.featuredCon2}>
+              <Typography className={classes.title}>Featured#2</Typography>
+          </Box> */}
+          <Box className={classes.imgContainer}>
+            <img
+              className={classes.projectImg}
+              // src={featuredProjectsArr[2].mainImage}
+              src="/assets/Images/movie_ratings_homepage.png"
+              alt="project homepage screen-grab"
+            />
+          </Box>
+          {/* //! Button Group Below */}
+          <Box className={classes.optionsBtnsCon}>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[2].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#919191" }}
+              >
+                View Live
+              </Button>
+            </a>
+            <Button
+              className={classes.optionsBtns}
+              onClick={() => displayDetails(featuredProjectsArr[2])}
+              style={{
+                backgroundColor: "#6c6c6c",
+              }}
+            >
+              Details
+            </Button>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[2].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  width: "33.4%",
+                  backgroundColor: "#6c6c6c",
+                }}
+              >
+                GitHub
+              </Button>
+            </a>
+          </Box>
+          <Box>
+            <Typography className={classes.techsUsedBottom}>
+              {featuredProjectsArr[2].techUsed}
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={1}>
+          {/* <Box className={classes.featuredCon3}>
+            <Typography className={classes.title}>AuthN</Typography>
+          </Box> */}
+        </Grid>
+      </Grid>
+      <Divider className={classes.divider}></Divider>
+      {/* //! Project #4 (Portfolio) */}
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>

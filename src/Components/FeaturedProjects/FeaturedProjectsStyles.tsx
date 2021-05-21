@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 100,
     marginTop: -10,
     padding: "0 3%",
-    animation: "fadeIn ease 1s",
+    animation: "fadeIn ease 1.5s",
     [theme.breakpoints.down("md")]: {
       padding: 0,
     },
