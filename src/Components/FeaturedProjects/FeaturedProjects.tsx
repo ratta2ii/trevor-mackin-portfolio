@@ -21,7 +21,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
     !featuredProjectsArr[1].mainImage ||
     !featuredProjectsArr[2].mainImage
   )
-    return <div></div>;
+    return <div>Loading...</div>;
 
   return (
     <Box className={classes.root}>
@@ -29,7 +29,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
-            <Typography className={classes.title}>Featured</Typography>
+            <Typography className={classes.title}>ECommerce</Typography>
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
@@ -113,14 +113,14 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               {featuredProjectsArr[1].techUsed}
             </Typography>
           </Box>
-          {/* <Box className={classes.featuredCon2}>
-              <Typography className={classes.title}>Featured#2</Typography>
-          </Box> */}
+          <Box className={classes.featuredCon2} >
+              <Typography className={classes.title}>Security</Typography>
+          </Box>
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
               // src={featuredProjectsArr[1].mainImage}
-              src="/assets/Images/screenshot-landing-page.png"
+              src="/assets/Images/csharp-react-jwt-auth-ss.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -172,98 +172,18 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
         </Grid>
         <Grid item xs={12} md={1}>
-          {/* <Box className={classes.featuredCon3}>
-            <Typography className={classes.title}>AuthN</Typography>
-          </Box> */}
+          <Box className={classes.featuredCon3}>
+            <Typography className={classes.title}>Secur<span style={{marginLeft: 6}}>i</span>ty</Typography>
+          </Box>
         </Grid>
       </Grid>
       <Divider className={classes.divider}></Divider>
-      {/* //! PROJECT #3 */}
-      <Grid container>
-        {/* Left Main Grid Container */}
-        <Grid item xs={12} md={1}></Grid>
-
-        {/* Right Main Grid Container */}
-        <Grid item xs={12} md={10}>
-          <Box>
-            <Typography
-              className={classes.techsUsedTop}
-              style={{ textAlign: "right" }}
-            >
-              {featuredProjectsArr[2].techUsed}
-            </Typography>
-          </Box>
-          {/* <Box className={classes.featuredCon2}>
-              <Typography className={classes.title}>Featured#2</Typography>
-          </Box> */}
-          <Box className={classes.imgContainer}>
-            <img
-              className={classes.projectImg}
-              // src={featuredProjectsArr[2].mainImage}
-              src="/assets/Images/movie_ratings_homepage.png"
-              alt="project homepage screen-grab"
-            />
-          </Box>
-          {/* //! Button Group Below */}
-          <Box className={classes.optionsBtnsCon}>
-            <a
-              className={classes.linkStyles}
-              href={featuredProjectsArr[2].liveSite}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                className={classes.optionsBtns}
-                style={{ backgroundColor: "#919191" }}
-              >
-                View Live
-              </Button>
-            </a>
-            <Button
-              className={classes.optionsBtns}
-              onClick={() => displayDetails(featuredProjectsArr[2])}
-              style={{
-                backgroundColor: "#6c6c6c",
-              }}
-            >
-              Details
-            </Button>
-            <a
-              className={classes.linkStyles}
-              href={featuredProjectsArr[2].gitHubRepo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                className={classes.optionsBtns}
-                style={{
-                  width: "33.4%",
-                  backgroundColor: "#6c6c6c",
-                }}
-              >
-                GitHub
-              </Button>
-            </a>
-          </Box>
-          <Box>
-            <Typography className={classes.techsUsedBottom}>
-              {featuredProjectsArr[2].techUsed}
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={12} md={1}>
-          {/* <Box className={classes.featuredCon3}>
-            <Typography className={classes.title}>AuthN</Typography>
-          </Box> */}
-        </Grid>
-      </Grid>
-      <Divider className={classes.divider}></Divider>
-      {/* //! Project #4 (Portfolio) */}
+      {/* //! Project #3 (Portfolio) */}
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
-            <Typography className={classes.title}>Portfolio</Typography>
+            <Typography className={classes.title}>Portfol<span style={{marginLeft: 6}}>i</span>o</Typography>
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
@@ -281,7 +201,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               alt="project homepage screen-grab"
             />
           </Box>
-          {/* //! Buttton Group Below */}
+          {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
             <a
               className={classes.linkStyles}
@@ -337,3 +257,88 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
 };
 
 export default FeaturedProject;
+
+
+
+
+
+// {/* //! PROJECT #3 */}
+// <Grid container>
+//   {/* Left Main Grid Container */}
+//   <Grid item xs={12} md={1}></Grid>
+
+//   {/* Right Main Grid Container */}
+//   <Grid item xs={12} md={10}>
+//     <Box>
+//       <Typography
+//         className={classes.techsUsedTop}
+//         style={{ textAlign: "right" }}
+//       >
+//         {featuredProjectsArr[2].techUsed}
+//       </Typography>
+//     </Box>
+//     {/* <Box className={classes.featuredCon2}>
+//         <Typography className={classes.title}>Featured#2</Typography>
+//     </Box> */}
+//     <Box className={classes.imgContainer}>
+//       <img
+//         className={classes.projectImg}
+//         src={featuredProjectsArr[2].mainImage}
+//         // src="/assets/Images/movie_ratings_homepage.png"
+//         alt="project homepage screen-grab"
+//       />
+//     </Box>
+//     {/* //! Button Group Below */}
+//     <Box className={classes.optionsBtnsCon}>
+//       <a
+//         className={classes.linkStyles}
+//         href={featuredProjectsArr[2].liveSite}
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         <Button
+//           className={classes.optionsBtns}
+//           style={{ backgroundColor: "#919191" }}
+//         >
+//           View Live
+//         </Button>
+//       </a>
+//       <Button
+//         className={classes.optionsBtns}
+//         onClick={() => displayDetails(featuredProjectsArr[2])}
+//         style={{
+//           backgroundColor: "#6c6c6c",
+//         }}
+//       >
+//         Details
+//       </Button>
+//       <a
+//         className={classes.linkStyles}
+//         href={featuredProjectsArr[2].gitHubRepo}
+//         target="_blank"
+//         rel="noopener noreferrer"
+//       >
+//         <Button
+//           className={classes.optionsBtns}
+//           style={{
+//             width: "33.4%",
+//             backgroundColor: "#6c6c6c",
+//           }}
+//         >
+//           GitHub
+//         </Button>
+//       </a>
+//     </Box>
+//     <Box>
+//       <Typography className={classes.techsUsedBottom}>
+//         {featuredProjectsArr[2].techUsed}
+//       </Typography>
+//     </Box>
+//   </Grid>
+//   <Grid item xs={12} md={1}>
+//     {/* <Box className={classes.featuredCon3}>
+//       <Typography className={classes.title}>AuthN</Typography>
+//     </Box> */}
+//   </Grid>
+// </Grid>
+// <Divider className={classes.divider}></Divider>

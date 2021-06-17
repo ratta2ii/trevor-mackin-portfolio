@@ -24,12 +24,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   overlayCon: {
-    background: "#555555e8",
-    position: "relative",
     top: 0,
     left: 0,
+    position: "relative",
     width: "100%",
     height: "100%",
+    background: "#9e9e9ead",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
-    fontSize: "1.6rem",
+    fontSize: "1.3rem",
   },
   techsUsed: {
     marginTop: 10,

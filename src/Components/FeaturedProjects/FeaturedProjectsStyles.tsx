@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     wordBreak: "break-word",
     textTransform: "uppercase",
     [theme.breakpoints.down("md")]: {},

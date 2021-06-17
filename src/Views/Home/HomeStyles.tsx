@@ -42,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
     width: "350px",
     height: "350px",
     animation: "fadeIn ease 2s",
+    marginTop: 40,
+    [theme.breakpoints.down("md")]: {
+      marginTop: "unset",
+    },
     [theme.breakpoints.down("sm")]: {
       position: "relative",
       margin: "0 auto 160px auto",
