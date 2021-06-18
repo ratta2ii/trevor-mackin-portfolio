@@ -11,6 +11,9 @@ interface IProps {
 const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const classes = useStyles();
 
+  const alertMessage =
+    "IMPORTANT! IMPORTANT! IMPORTANT!\n\nThe application sleeps after 30 mins of inactivity due to my current account limitations on Heroku.\n\nBecause of this, the INITIAL load time will be slower than normal (20 secs); This is not a performance issue.\n\nThank you for your patience.";
+
   // Images are high resolution (slow loading), so this will attempt to keep the page from being
   // so jumpy. I want the image to be all the way downloaded before rendering the component. I
   // will need to update this at a later date
@@ -113,8 +116,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               {featuredProjectsArr[1].techUsed}
             </Typography>
           </Box>
-          <Box className={classes.featuredCon2} >
-              <Typography className={classes.title}>Security</Typography>
+          <Box className={classes.featuredCon2}>
+            <Typography className={classes.title}>Security</Typography>
           </Box>
           <Box className={classes.imgContainer}>
             <img
@@ -133,6 +136,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               rel="noopener noreferrer"
             >
               <Button
+                onClick={() => alert(alertMessage)}
                 className={classes.optionsBtns}
                 style={{ backgroundColor: "#919191" }}
               >
@@ -173,7 +177,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         </Grid>
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon3}>
-            <Typography className={classes.title}>Secur<span style={{marginLeft: 6}}>i</span>ty</Typography>
+            <Typography className={classes.title}>
+              Secur<span style={{ marginLeft: 6 }}>i</span>ty
+            </Typography>
           </Box>
         </Grid>
       </Grid>
@@ -183,7 +189,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
-            <Typography className={classes.title}>Portfol<span style={{marginLeft: 6}}>i</span>o</Typography>
+            <Typography className={classes.title}>
+              Portfol<span style={{ marginLeft: 6 }}>i</span>o
+            </Typography>
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
@@ -257,10 +265,6 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
 };
 
 export default FeaturedProject;
-
-
-
-
 
 // {/* //! PROJECT #3 */}
 // <Grid container>

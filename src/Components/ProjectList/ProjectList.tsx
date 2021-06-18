@@ -15,7 +15,7 @@ const ProjectList: React.FC<IProps> = ({ displayDetails }) => {
   return (
     <Box className={classes.root}>
       <Typography className={classes.title} variant="h1">
-        ... more projects ...
+        {"<-- more projects -->"}
       </Typography>
       <Grid container spacing={1}>
         {projectsArray.map((project: IProject, index: number) => (
