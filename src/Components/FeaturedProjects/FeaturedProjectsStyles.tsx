@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   featuredCon: {
-    width: 28,
+    width: 25,
     height: "100%",
     display: "flex",
     alignItems: "center",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   featuredCon3: {
-    width: 30,
+    width: 25,
     height: "100%",
     display: "flex",
     alignItems: "center",
@@ -59,12 +59,12 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 50% 50%, #f5f5f5, #616161)",
+      "radial-gradient(circle farthest-side at 50% 50%, white, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "1.8rem",
+    fontSize: "1.6rem",
     wordBreak: "break-word",
     textTransform: "uppercase",
     [theme.breakpoints.down("md")]: {},
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     fontWeight: 200,
     marginBottom: 22,
-    color: "#f5f5f5",
+    color: "white",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 100,
     marginTop: 15,
     textAlign: "center",
-    color: "#f5f5f5",
+    color: "white",
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
     },

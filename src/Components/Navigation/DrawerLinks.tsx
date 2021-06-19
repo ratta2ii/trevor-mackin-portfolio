@@ -37,11 +37,11 @@ const useStyles = makeStyles((theme) => ({
     height: 23,
   },
   listItemText: {
-    fontSize: "1rem",
+    fontSize: ".85rem",
     letterSpacing: "0.03rem",
     fontWeight: 500,
-    color: "#fff1f0",
-    marginTop: 3,
+    color: "#e6e9eb",
+    marginTop: 6,
   },
 }));
 

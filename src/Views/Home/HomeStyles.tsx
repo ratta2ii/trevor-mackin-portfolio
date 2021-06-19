@@ -2,57 +2,64 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "75%",
-    maxWidth: 1100,
+    width: 835,
+    minHeight: 750,
     margin: "auto",
-    marginTop: 65,
+    marginTop: 75,
     backgroundColor: "#0e0f0f",
     overflowX: "hidden",
     [theme.breakpoints.down("md")]: {
-      width: "95%",
+      width: 750,
     },
     [theme.breakpoints.down("sm")]: {
-      padding: "0 5% 0 5%",
+      width: "unset",
+      padding: "0 5%",
     },
+    [theme.breakpoints.down("xs")]: {},
   },
   title: {
+    marginTop: 110,
     backgroundImage:
-      "radial-gradient(circle farthest-side at 50% 50%, #f5f5f5, #616161)",
+      "radial-gradient(circle farthest-side at 50% 50%, white, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "3rem",
-    marginBottom: '7%',
-    textAlign: "center",
+    fontSize: "2.7rem",
     [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
       fontSize: "3rem",
       marginBottom: 70,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.3rem",
-      marginBottom: 65,
+      marginBottom: 10,
+      marginTop: 20,
+      fontSize: "1.8rem",
       marginLeft: 0,
     },
   },
+  profilePicGridItem: {
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: 20,
+    },
+  },
   imgDesignBoxOuter: {
+    width: 280,
+    height: 280,
+    background: "#68af5c",
+    marginTop: 65,
     borderRadius: 10,
     borderTopLeftRadius: 10,
-    background: "#68af5c",
-    width: "350px",
-    height: "350px",
     animation: "fadeIn ease 2s",
-    marginTop: 40,
-    [theme.breakpoints.down("md")]: {
-      marginTop: "unset",
-    },
+    [theme.breakpoints.down("md")]: {},
     [theme.breakpoints.down("sm")]: {
       position: "relative",
-      margin: "0 auto 160px auto",
-      left: "-32px",
+      margin: "50px auto 0px auto",
+      left: "-20px",
     },
     [theme.breakpoints.down("xs")]: {
-      marginBottom: 125,
+      marginTop: "unset",
+      marginBottom: 50,
       width: 200,
       height: 200,
     },
@@ -61,29 +68,65 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     background: "#009688",
     position: "relative",
-    top: "30px",
-    left: "30px",
+    top: 10,
+    left: 10,
     height: "100%",
     width: "100%",
   },
   imgDesignBoxInner: {
     borderRadius: 10,
     position: "relative",
-    top: 30,
-    left: 30,
+    top: 10,
+    left: 10,
     height: "100%",
     width: "100%",
   },
-  profileImage: {
-    width: "80%",
-    maxWidth: 550,
-    border: "2px solid #292727",
-    borderTopLeftRadius: "60px",
-    borderBottomRightRadius: "60px",
-    borderTopRightRadius: "3px",
-    borderBottomLeftRadius: "3px",
-    boxShadow: "inset 5em 1em gold",
+  profileImg: {
+    width: "100%",
+    borderRadius: 10,
+  },
+  bio: {
+    fontSize: 15,
+    color: "white",
+    textAlign: "justify",
+    [theme.breakpoints.down("sm")]: {
+      padding: "0 50px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      padding: "0 0 0 4%",
+      textAlign: "unset",
+    },
+  },
+  techDisplayMainCon: {
+    backgroundImage: `-webkit-linear-gradient(96deg, rgb(252 250 255) 85%, #0f1010 15%)`,
+    width: "100%",
+    height: 1000,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "20% 20% 10%",
+    [theme.breakpoints.down("md")]: {
+      padding: "30% 20% 10%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      backgroundImage: `-webkit-linear-gradient(96deg, rgb(252 250 255) 91%, #0f1010 9%)`,
+      height: 700,
+      padding: "120px 10% 10%",
+    },
+  },
+  footerCon: {
+    padding: 75,
+    width: "100%",
+    height: 500,
+    [theme.breakpoints.down("sm")]: {
+      padding: "5%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      height: 455,
+    },
   },
 }));
 
 export default useStyles;
+
+//! Love this color #1b2027

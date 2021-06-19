@@ -1,4 +1,29 @@
 import React from "react";
+import AboutMeCard from "../../Components/AboutMeCard/AboutMeCard";
+import { Box, Typography } from "@material-ui/core";
+import useStyles from "./ContactStyles";
+
+const Contact = () => {
+  const classes = useStyles();
+
+  return (
+    <Box className={classes.root}>
+      <Box className={classes.iconsMainContainer}>
+        <AboutMeCard />
+      </Box>
+      <Typography variant="h1" className={classes.title}>
+        Thank you for visiting!
+      </Typography>
+    </Box>
+  );
+};
+
+export default Contact;
+
+/*
+! Old component
+import React from "react";
+import AboutMeCard from "../../Components/AboutMeCard/AboutMeCard";
 import { Box, Typography } from "@material-ui/core";
 import useStyles, { StyledIcon } from "./ContactStyles";
 
@@ -45,5 +70,5 @@ const Contact = () => {
     </Box>
   );
 };
-
 export default Contact;
+*/

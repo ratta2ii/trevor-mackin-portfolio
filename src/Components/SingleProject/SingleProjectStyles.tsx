@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
   projectTitle: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 40% 50%, #f5f5f5, #9e9e9e)",
+      "radial-gradient(circle farthest-side at 40% 50%, white, #9e9e9e)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     fontSize: 12,
     fontWeight: 200,
-    color: "#f5f5f5",
+    color: "white",
     textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,

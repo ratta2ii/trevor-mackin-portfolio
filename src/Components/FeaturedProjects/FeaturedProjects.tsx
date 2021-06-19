@@ -12,7 +12,13 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const classes = useStyles();
 
   const alertMessage =
-    "IMPORTANT! IMPORTANT! IMPORTANT!\n\nThe application sleeps after 30 mins of inactivity due to my current account limitations on Heroku.\n\nBecause of this, the INITIAL load time will be slower than normal (20 secs); This is not a performance issue.\n\nThank you for your patience.";
+    "IMPORTANT! IMPORTANT! IMPORTANT!\n\nThe application sleeps after 30 mins of inactivity, due to account limitations on Heroku.\n\nBecause of this, the INITIAL load time will be slower than normal (20 secs); This is not a performance issue.\n\nThank you for your patience.";
+
+  const handleLoadSitewithAlert = (url: string) => {
+    alert(alertMessage);
+    console.log(url);
+    window.open(url, '_blank');
+  };
 
   // Images are high resolution (slow loading), so this will attempt to keep the page from being
   // so jumpy. I want the image to be all the way downloaded before rendering the component. I
@@ -105,7 +111,6 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}></Grid>
-
         {/* Right Main Grid Container */}
         <Grid item xs={12} md={10}>
           <Box>
@@ -129,20 +134,13 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
           {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
-            <a
-              className={classes.linkStyles}
-              href={featuredProjectsArr[1].liveSite}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              onClick={() => handleLoadSitewithAlert(featuredProjectsArr[1].liveSite)}
+              className={classes.optionsBtns}
+              style={{ backgroundColor: "#919191" }}
             >
-              <Button
-                onClick={() => alert(alertMessage)}
-                className={classes.optionsBtns}
-                style={{ backgroundColor: "#919191" }}
-              >
-                View Live
-              </Button>
-            </a>
+              View Live
+            </Button>
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[1])}
