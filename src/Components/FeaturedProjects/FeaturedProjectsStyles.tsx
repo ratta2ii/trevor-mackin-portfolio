@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
       textTransform: "capitalize",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.5rem",
+      fontSize: "1rem",
       marginBottom: 0,
       marginLeft: "8%",
     },
@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow:
       "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
     [theme.breakpoints.down("xs")]: {
-      height: 35,
+      height: 30,
     },
   },
   optionsBtns: {
@@ -152,6 +152,12 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "#bdbdbd",
   },
+  spanLetterI: {
+    marginLeft: 6,
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: 0,
+    },
+  }
 }));
 
 export default useStyles;

@@ -68,14 +68,14 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{ backgroundColor: "#919191" }}
               >
-                View Live
+                View Website
               </Button>
             </a>
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[0])}
               style={{
-                backgroundColor: "#6c6c6c",
+                backgroundColor: "#567798",
               }}
             >
               Details
@@ -90,7 +90,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#6c6c6c",
+                  backgroundColor: "#567798",
                 }}
               >
                 GitHub
@@ -139,13 +139,13 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               className={classes.optionsBtns}
               style={{ backgroundColor: "#919191" }}
             >
-              View Live
+              View Website
             </Button>
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[1])}
               style={{
-                backgroundColor: "#6c6c6c",
+                backgroundColor: "#567798",
               }}
             >
               Details
@@ -160,7 +160,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#6c6c6c",
+                  backgroundColor: "#567798",
                 }}
               >
                 GitHub
@@ -188,7 +188,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
             <Typography className={classes.title}>
-              Portfol<span style={{ marginLeft: 6 }}>i</span>o
+              Portfol<span className={classes.spanLetterI}>i</span>o
             </Typography>
           </Box>
         </Grid>
@@ -219,14 +219,14 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{ backgroundColor: "#919191" }}
               >
-                View Live
+                View Website
               </Button>
             </a>
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[2])}
               style={{
-                backgroundColor: "#6c6c6c",
+                backgroundColor: "#567798",
               }}
             >
               Details
@@ -241,7 +241,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
                 className={classes.optionsBtns}
                 style={{
                   width: "33.4%",
-                  backgroundColor: "#6c6c6c",
+                  backgroundColor: "#567798",
                 }}
               >
                 GitHub
@@ -309,7 +309,7 @@ export default FeaturedProject;
 //         className={classes.optionsBtns}
 //         onClick={() => displayDetails(featuredProjectsArr[2])}
 //         style={{
-//           backgroundColor: "#6c6c6c",
+//           backgroundCo#567798",
 //         }}
 //       >
 //         Details
@@ -324,7 +324,7 @@ export default FeaturedProject;
 //           className={classes.optionsBtns}
 //           style={{
 //             width: "33.4%",
-//             backgroundColor: "#6c6c6c",
+//             backgroundColor: "#2c3e50",
 //           }}
 //         >
 //           GitHub

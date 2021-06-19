@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
       textTransform: "capitalize",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.5rem",
+      fontSize: "1.2rem",
       marginBottom: 45,
     },
   },

@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     width: "100%",
     height: "100%",
-    background: "#9e9e9ead",
+    background: `linear-gradient(-45deg, #101010ad, #2c3e50)`,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -44,7 +44,10 @@ const useStyles = makeStyles((theme) => ({
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
-    fontSize: "1.3rem",
+    fontSize: "1.2rem",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1rem",
+    },
   },
   techsUsed: {
     marginTop: 10,
@@ -62,7 +65,10 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #757575",
     marginTop: -8,
     boxShadow:
-      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
+    "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
+    [theme.breakpoints.down("xs")]: {
+      height: 30,
+    },
   },
   optionsBtns: {
     width: "50%",
