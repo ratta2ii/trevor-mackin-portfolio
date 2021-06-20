@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import SingleProject from "../SingleProject/SingleProject";
 import useStyles from "./ProjectListStyles";
 import { IProject } from "../../Models/IProject";
@@ -14,9 +14,6 @@ const ProjectList: React.FC<IProps> = ({ displayDetails }) => {
 
   return (
     <Box className={classes.root}>
-      <Typography className={classes.title} variant="h2">
-        {"<-- more projects -->"}
-      </Typography>
       <Grid container spacing={1}>
         {projectsArray.map((project: IProject, index: number) => (
           <SingleProject

@@ -16,7 +16,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const handleLoadSitewithAlert = (url: string) => {
     alert(alertMessage);
     console.log(url);
-    window.open(url, '_blank');
+    window.open(url, "_blank");
   };
 
   // Images are high resolution (slow loading), so this will attempt to keep the page from being
@@ -65,7 +65,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               <Button
                 className={classes.optionsBtns}
-                style={{ backgroundColor: "#919191" }}
+                style={{ backgroundColor: "#90a4ae", width: "33.4%" }}
               >
                 View Website
               </Button>
@@ -88,8 +88,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               <Button
                 className={classes.optionsBtns}
                 style={{
-                  width: "33.4%",
-                  backgroundColor: "#567798",
+                  backgroundColor: "#68af5d",
                 }}
               >
                 GitHub
@@ -134,9 +133,11 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
             <Button
-              onClick={() => handleLoadSitewithAlert(featuredProjectsArr[1].liveSite)}
+              onClick={() =>
+                handleLoadSitewithAlert(featuredProjectsArr[1].liveSite)
+              }
               className={classes.optionsBtns}
-              style={{ backgroundColor: "#919191" }}
+              style={{ backgroundColor: "#90a4ae", width: "33.4%" }}
             >
               View Website
             </Button>
@@ -158,8 +159,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               <Button
                 className={classes.optionsBtns}
                 style={{
-                  width: "33.4%",
-                  backgroundColor: "#567798",
+                  backgroundColor: "#68af5d",
                 }}
               >
                 GitHub
@@ -216,7 +216,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
             >
               <Button
                 className={classes.optionsBtns}
-                style={{ backgroundColor: "#919191" }}
+                style={{ backgroundColor: "#90a4ae", width: "33.4%" }}
               >
                 View Website
               </Button>
@@ -239,8 +239,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
               <Button
                 className={classes.optionsBtns}
                 style={{
-                  width: "33.4%",
-                  backgroundColor: "#567798",
+                  backgroundColor: "#68af5d",
                 }}
               >
                 GitHub
@@ -299,9 +298,9 @@ export default FeaturedProject;
 //       >
 //         <Button
 //           className={classes.optionsBtns}
-//           style={{ backgroundColor: "#919191" }}
+//           style={{ backgroundColor: "#919191",  width: "33.4%" }}
 //         >
-//           View Live
+//           View Website
 //         </Button>
 //       </a>
 //       <Button
@@ -322,7 +321,6 @@ export default FeaturedProject;
 //         <Button
 //           className={classes.optionsBtns}
 //           style={{
-//             width: "33.4%",
 //             backgroundColor: "#2c3e50",
 //           }}
 //         >

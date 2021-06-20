@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     animation: "fadeIn ease .5s",
     [theme.breakpoints.down("xs")]: {
-      padding: "0 3%",
+      padding: "0 7%",
       fontSize: 8,
     },
   },
@@ -26,9 +26,9 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 100,
     },
   },
-  title: {
+  thankYou: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 30% 50%, #d5ffff12, #616161)",
+      "radial-gradient(circle farthest-side at 30% 50%, #12272e, #2a374b)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       marginTop: 40,
       marginBottom: 0,
-      fontSize: "1.2rem"
+      fontSize: "1.3rem"
     },
   },
 }));
@@ -88,7 +88,7 @@ export default useStyles;
     },
     title: {
       backgroundImage:
-        "radial-gradient(circle farthest-side at 30% 50%, white, #616161)",
+        "radial-gradient(circle farthest-side at 30% 50%, #eefaff, #616161)",
       WebkitBackgroundClip: "text",
       backgroundClip: "text",
       color: "transparent",

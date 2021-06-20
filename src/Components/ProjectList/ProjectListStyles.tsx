@@ -4,14 +4,16 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background: "#0d1117",
     width: "100%",
+    marginTop: 100,
     [theme.breakpoints.down("xs")]: {
+      marginTop: 70,
       paddingLeft: "6%",
       paddingRight: "6%",
     },
   },
   title: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 30% 50%, white, #616161)",
+      "radial-gradient(circle farthest-side at 30% 50%, #eefaff, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",

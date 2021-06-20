@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 50% 50%, white, #616161)",
+      "radial-gradient(circle farthest-side at 50% 50%, #d5f3ff, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
       textTransform: "capitalize",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1rem",
+      fontSize: "1.3rem",
       marginBottom: 0,
       marginLeft: "8%",
     },
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     fontWeight: 200,
     marginBottom: 22,
-    color: "white",
+    color: "#eefaff",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -103,7 +103,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 100,
     marginTop: 15,
     textAlign: "center",
-    color: "white",
+    color: "#eefaff",
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
     },
@@ -118,6 +118,7 @@ const useStyles = makeStyles((theme) => ({
     height: 1,
     background: "#323538",
     [theme.breakpoints.down("xs")]: {
+      opacity: 0,
       marginTop: 35,
       marginBottom: 35,
     },
@@ -138,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#757676",
     fontSize: 11,
     outline: "1px solid #1f2123",
-    color: "white",
+    color: "#eefaff",
     borderRadius: 0,
     fontWeight: 500,
     "&:hover": {

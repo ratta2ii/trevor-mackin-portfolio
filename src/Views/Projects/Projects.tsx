@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@material-ui/core/Box";
 import FeaturedProjects from "../../Components/FeaturedProjects/FeaturedProjects";
 import ProjectList from "../../Components/ProjectList/ProjectList";
@@ -13,6 +13,10 @@ const Projects = () => {
   const [currentProjectDetails, setCurrentProjectDetails] = useState<string>("");
   const [currentProjectName, setCurrentProjectName] = useState<string>("");
   const [open, setOpen] = React.useState<boolean>(false);
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, []);
 
   const handleClose = () => {
     setOpen(false);

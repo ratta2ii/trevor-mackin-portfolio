@@ -11,7 +11,7 @@ const Contact = () => {
       <Box className={classes.iconsMainContainer}>
         <AboutMeCard />
       </Box>
-      <Typography variant="h1" className={classes.title}>
+      <Typography variant="h3" className={classes.thankYou}>
         Thank you for visiting!
       </Typography>
     </Box>

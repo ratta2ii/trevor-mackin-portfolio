@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   projectTitle: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 40% 50%, white, #9e9e9e)",
+      "radial-gradient(circle farthest-side at 40% 50%, #d5f3ff, #9e9e9e)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     fontSize: 12,
     fontWeight: 200,
-    color: "white",
+    color: "#eefaff",
     textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,
@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     border: "1px solid #757575",
     marginTop: -8,
     boxShadow:
-    "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
     [theme.breakpoints.down("xs")]: {
       height: 30,
     },
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     width: "50%",
     height: "100%",
     fontSize: 11,
-    color: "white",
+    color: "#eefaff",
     borderRadius: 0,
     outline: "1px solid #1f2123",
     fontWeight: 500,

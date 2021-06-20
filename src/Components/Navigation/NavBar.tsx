@@ -8,17 +8,20 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: "flex",
     height: 130,
+    display: "flex",
     backgroundImage:
       "linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('/assets/Images/binary.jpeg')",
-    borderBottom: "15px solid rgba(0,0,0,0)",
-    backgroundPositionY: -294,
-    backgroundSize: "cover",
-    [theme.breakpoints.down("xs")]: {
-      height: 115,
-      backgroundSize: "unset",
+    backgroundSize: "contain",
+    borderBottom: "17px solid rgba(0,0,0,0)",
+    backgroundPositionY: -279,
+    [theme.breakpoints.down("lg")]: {
       borderBottom: "16px solid rgba(0,0,0,0)",
+      backgroundPositionY: -282,
+    },
+    [theme.breakpoints.down("xs")]: {
+      backgroundSize: "unset",
+      height: 115,
       backgroundPositionY: -221,
     },
   },

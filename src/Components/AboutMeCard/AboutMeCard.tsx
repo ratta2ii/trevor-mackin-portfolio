@@ -1,5 +1,11 @@
 import React from "react";
-import "./AboutMeCardStyles.css";
+import "./AboutMeCard.Styles.css";
+import styled from "styled-components";
+
+export const StyledAnchor = styled.a`
+  color: #29b6f6;
+  text-decoration: none;
+`;
 
 const AboutMeCard = () => {
   return (
@@ -15,6 +21,8 @@ const AboutMeCard = () => {
           <div>7</div>
           <div>8</div>
           <div>9</div>
+          <div>10</div>
+          <div>11</div>
         </div>
         <code>
           <span className="variable">const </span>
@@ -45,9 +53,9 @@ const AboutMeCard = () => {
               <span className="property">email</span>
               <span className="operator">: </span>
               <span className="string">
-                <a href="mailto:tismetrm@gmail.com?subject=Mail from trevormackin.com">
+                <StyledAnchor href="mailto:tismetrm@gmail.com?subject=Mail from trevormackin.com">
                   tismeTRM@gmail.com
-                </a>
+                </StyledAnchor>
               </span>
               <span>,</span>
             </div>
@@ -55,7 +63,9 @@ const AboutMeCard = () => {
               <span className="property">gitHub</span>
               <span className="operator">: </span>
               <span className="string">
-                <a href="https://github.com/ratta2ii'">github.com/ratta2ii</a>
+                <StyledAnchor href="https://github.com/ratta2ii'">
+                  github.com/ratta2ii
+                </StyledAnchor>
               </span>
               <span>,</span>
             </div>
@@ -63,7 +73,9 @@ const AboutMeCard = () => {
               <span className="property">website</span>
               <span className="operator">: </span>
               <span className="string">
-                <a href="https://trevormackin.com">trevormackin.com</a>
+                <StyledAnchor href="https://trevormackin.com">
+                  trevormackin.com
+                </StyledAnchor>
               </span>
               <span>,</span>
             </div>
@@ -71,9 +83,9 @@ const AboutMeCard = () => {
               <span className="property">linkedIn</span>
               <span className="operator">: </span>
               <span className="string">
-                <a href="https://linkedin.com/in/trevor-mackin">
+                <StyledAnchor href="https://linkedin.com/in/trevor-mackin">
                   linkedin.com/in/trevor-mackin
-                </a>
+                </StyledAnchor>
               </span>
             </div>
             <span>{"}"}</span>

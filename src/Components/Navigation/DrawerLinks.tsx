@@ -17,7 +17,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#181a1a",
+    backgroundColor: "#0d1117",
     marginTop: 75,
     paddingBottom: 50,
   },
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     height: 23,
   },
   listItemText: {
-    fontSize: ".85rem",
+    fontSize: "1rem",
     letterSpacing: "0.03rem",
     fontWeight: 500,
     color: "#e6e9eb",
@@ -65,8 +65,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/" === pathname ? "#24313e" : "unset",
             paddingLeft: "/" === pathname ? "8px" : "16px",
-            paddingTop: 12,
-            paddingBottom: 12,
+            paddingTop: 15,
+            paddingBottom: 15,
           }}
         >
           <ListItemIcon>
@@ -83,8 +83,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/projects" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/projects" === pathname ? "#24313e" : "unset",
             paddingLeft: "/projects" === pathname ? "8px" : "16px",
-            paddingTop: 12,
-            paddingBottom: 12,
+            paddingTop: 15,
+            paddingBottom: 15,
           }}
         >
           <ListItemIcon>
@@ -127,8 +127,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/contact" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/contact" === pathname ? "#24313e" : "unset",
             paddingLeft: "/contact" === pathname ? "8px" : "16px",
-            paddingTop: 12,
-            paddingBottom: 12,
+            paddingTop: 15,
+            paddingBottom: 15,
           }}
         >
           <ListItemIcon>
