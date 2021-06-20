@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Box,
   List,
@@ -9,11 +9,10 @@ import {
 } from "@material-ui/core";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
-import CancelIcon from '@material-ui/icons/Cancel';
+import CancelIcon from "@material-ui/icons/Cancel";
 import HomeIcon from "@material-ui/icons/Home";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import SystemUpdateAltIcon from "@material-ui/icons/SystemUpdateAlt";
-//import GitHubIcon from "@material-ui/icons/GitHub";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -49,20 +48,45 @@ interface IProps {
   drawerToggle: () => void;
 }
 
-const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
+const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
   const classes = useStyles();
+  let pathname = useLocation().pathname;
 
   return (
     <Box className={classes.root}>
       <Box className={classes.toolbar}></Box>
       <List onClick={() => drawerToggle()}>
-        <ListItem button key="Home" component={Link} to="/">
+        <ListItem
+          button
+          key="Home"
+          component={Link}
+          to="/"
+          style={{
+            borderLeft: "/" === pathname ? "8px solid red" : "unset",
+            backgroundColor: "/" === pathname ? "#24313e" : "unset",
+            paddingLeft: "/" === pathname ? "8px" : "16px",
+            paddingTop: 12,
+            paddingBottom: 12,
+          }}
+        >
           <ListItemIcon>
             <HomeIcon className={classes.icons} />
           </ListItemIcon>
           <Typography className={classes.listItemText}>Home</Typography>
         </ListItem>
-        <ListItem button key="Projects" component={Link} to="/projects">
+        <ListItem
+          button
+          key="Projects"
+          component={Link}
+          to="/projects"
+          style={{
+            borderLeft: "/projects" === pathname ? "8px solid red" : "unset",
+            backgroundColor: "/projects" === pathname ? "#24313e" : "unset",
+            paddingLeft: "/projects" === pathname ? "8px" : "16px",
+            paddingTop: 12,
+            paddingBottom: 12,
+          }}
+        >
           <ListItemIcon>
             <DesktopMacIcon className={classes.icons} />
           </ListItemIcon>
@@ -81,20 +105,6 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
             <Typography className={classes.listItemText}>Resume</Typography>
           </ListItem>
         </a>
-        {/* GitHub (This info is under the Contact Info already) */}
-        {/* <a
-          className={classes.linkStyles}
-          href="https://github.com/ratta2ii"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ListItem button key="GitHub">
-            <ListItemIcon>
-              <GitHubIcon className={classes.icons} />
-            </ListItemIcon>
-            <Typography className={classes.listItemText}>GitHub</Typography>
-          </ListItem>
-        </a> */}
         <a
           className={classes.linkStyles}
           href="https://www.linkedin.com/in/trevor-mackin/"
@@ -108,7 +118,19 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
             <Typography className={classes.listItemText}>LinkedIn</Typography>
           </ListItem>
         </a>
-        <ListItem button key="Contact" component={Link} to="/contact">
+        <ListItem
+          button
+          key="Contact"
+          component={Link}
+          to="/contact"
+          style={{
+            borderLeft: "/contact" === pathname ? "8px solid red" : "unset",
+            backgroundColor: "/contact" === pathname ? "#24313e" : "unset",
+            paddingLeft: "/contact" === pathname ? "8px" : "16px",
+            paddingTop: 12,
+            paddingBottom: 12,
+          }}
+        >
           <ListItemIcon>
             <ContactMailIcon className={classes.icons} />
           </ListItemIcon>
@@ -125,4 +147,4 @@ const Drawerlinks: React.FC<IProps> = ({ drawerToggle }) => {
   );
 };
 
-export default Drawerlinks;
+export default DrawerLinks;

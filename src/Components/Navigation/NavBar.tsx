@@ -9,8 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
-    height: 120,
-    borderBottom: "10px solid #2196f3",
+    height: 125,
     [theme.breakpoints.down("xs")]: {
       height: 100,
     },
@@ -21,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
-    width: 240,
+    width: 220,
   },
   content: {
     flexGrow: 1,

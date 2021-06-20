@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
@@ -14,13 +13,27 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     backgroundColor: "#000000",
     [theme.breakpoints.down("xs")]: {
-        overflowX: "hidden",
+      overflowX: "hidden",
     },
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  menuButtonCon: {
+    marginRight: theme.spacing(1),
     [theme.breakpoints.up("sm")]: {
       display: "none",
+    },
+  },
+  menuIcon: {
+    width: 45,
+    height: 45,
+    marginLeft: 5,
+    borderRadius: "50%",
+    boxShadow: `0 0 0.25em 0.25em rgb(67 151 226 / 25%)`,
+    "&:hover": {
+      marginLeft: 6,
+      marginTop: 1,
+      width: 43,
+      height: 43,
+      boxShadow: "unset",
     },
   },
   linkedInIcon: {
@@ -101,11 +114,14 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
         <IconButton
           color="inherit"
           aria-label="open drawer"
-          edge="start"
           onClick={handleDrawerToggle}
-          className={classes.menuButton}
+          className={classes.menuButtonCon}
         >
-          <MenuIcon />
+          <img
+            src="/assets/Images/menu-icon.png"
+            alt="menu icon"
+            className={classes.menuIcon}
+          />
         </IconButton>
         <Box className={classes.tmLinkContainer}>
           <a
