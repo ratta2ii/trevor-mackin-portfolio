@@ -3,7 +3,6 @@ import { Box, Button, Divider, Grid, Typography } from "@material-ui/core";
 import useStyles from "./FeaturedProjectsStyles";
 import { featuredProjectsArr } from "../../Data/Projects";
 import { IProject } from "./../../Models/IProject";
-
 interface IProps {
   displayDetails: (project: IProject) => void;
 }
@@ -51,8 +50,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              // src={featuredProjectsArr[0].mainImage}
-              src="/assets/Images/az_movie_nights_homepage.png"
+              src={featuredProjectsArr[0].mainImage}
+              //src="/assets/Images/az_movie_nights_homepage.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -127,8 +126,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              // src={featuredProjectsArr[1].mainImage}
-              src="/assets/Images/csharp-react-jwt-auth-ss.png"
+              src={featuredProjectsArr[1].mainImage}
+              // src="/assets/Images/csharp-react-jwt-auth-ss.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -169,7 +168,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
           <Box>
             <Typography className={classes.techsUsedBottom}>
-              {featuredProjectsArr[0].techUsed}
+              {featuredProjectsArr[1].techUsed}
             </Typography>
           </Box>
         </Grid>
@@ -193,7 +192,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
-        <Grid item xs={12} md={10} style={{ backgroundColor: "#0e0f0f" }}>
+        <Grid item xs={12} md={10} style={{ backgroundColor: "#0d1117" }}>
           <Box>
             <Typography className={classes.techsUsedTop}>
               {featuredProjectsArr[2].techUsed}

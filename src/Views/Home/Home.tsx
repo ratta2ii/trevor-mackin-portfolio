@@ -24,12 +24,12 @@ const Bio = () => {
                 </Box>
               </Box>
             </Box>
-            <Box className={classes.imgDesignBoxOuter} >
+            <Box className={classes.imgDesignBoxOuter}>
               <Box className={classes.imgDesignBoxMiddle} style={{ top: -10 }}>
                 <Box className={classes.imgDesignBoxInner} style={{ top: -10 }}>
                   <img
                     className={classes.profileImg}
-                    src="/assets/Images/isabella.jpg"
+                    src="/assets/Images/family.jpg"
                     alt="software engineer project portfolio; creator's dog"
                   />
                 </Box>
@@ -53,25 +53,23 @@ const Bio = () => {
                   excitement, right?
                 </p>
                 <p>
-                  Please take some time to checkout some of {" "}
-                  <a href="#/projects" >
-                    My Projects
-                  </a>
-                  , each one touching on a number of different areas across the
-                  technological spectrum. A project may include, implementing a
-                  database, authenticating and authorizing users, working with
-                  various API’s (provider and consumer), taking advantage of
-                  available Cloud Services (SaaS, PaaS, DBaaS), or even an
-                  instance, or two, of me flexing my design muscles. In any case
-                  though, each project will demonstrate an understanding of the
-                  topic at hand.
+                  Please take some time to checkout a few of my{" "}
+                  <a href="#/projects">PERSONAL PROJECTS</a>, each one
+                  touching on various areas across the technological spectrum. A
+                  project may include, implementing a database, authenticating
+                  and authorizing users, working with various API’s (as both a
+                  provider and consumer), taking advantage of the latest Cloud
+                  Technologies (SaaS, PaaS, DBaaS, etc.), or even an instance -probably
+                  many- of me flexing my design muscles. In every case, each
+                  project will demonstrate an understanding of the topic at
+                  hand.
                 </p>
                 <p>
                   And lastly, I am ready to take on the world. I am hungry,
                   motivated, intelligent, and I believe that I possess both the
-                  focus, and determination, that it will take to remain
-                  successful in this industry; and of course, always hoping to
-                  leave a lasting impression along the way.
+                  focus, and determination, that it takes to remain successful
+                  in this industry; and of course, always hoping to leave a
+                  lasting impression along the way.
                 </p>
               </Box>
             </Grid>
@@ -79,8 +77,8 @@ const Bio = () => {
         </Grid>
       </Box>
       {/* //! Tech Display */}
-      <Box className={classes.techDisplayMainCon} >
-          <TechDisplay />
+      <Box className={classes.techDisplayMainCon}>
+        <TechDisplay />
       </Box>
       {/* //! Footer */}
       <Box className={classes.footerCon}>

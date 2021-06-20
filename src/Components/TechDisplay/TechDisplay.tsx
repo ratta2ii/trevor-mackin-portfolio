@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     marginBottom: 10,
     animation: "fadeIn ease 2s",
-
+    boxShadow:
+      "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
     [theme.breakpoints.down("sm")]: {
       height: 130,
       width: 130,
@@ -60,7 +61,7 @@ const TechDisplay = () => {
     if (title === "dot") return ".net";
     else if (title === "visualstudio") return "visual studio";
     else return title;
-  }
+  };
 
   const iconList: string[] = [
     "devicon-html5-plain-wordmark",

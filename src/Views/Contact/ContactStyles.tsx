@@ -20,17 +20,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 140,
     fontSize: "1.5rem",
     [theme.breakpoints.down("sm")]: {
-      maxWidth: 370,
       fontSize: "1rem",
     },
     [theme.breakpoints.down("xs")]: {
       marginTop: 100,
-      paddingLeft: 30,
     },
   },
   title: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 30% 50%, white, #616161)",
+      "radial-gradient(circle farthest-side at 30% 50%, #d5ffff12, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
@@ -43,13 +41,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2.5rem",
     },
     [theme.breakpoints.down("sm")]: {
-      fontSize: "2.5rem",
+      fontSize: "2rem",
       marginTop: 90,
     },
     [theme.breakpoints.down("xs")]: {
       marginTop: 40,
       marginBottom: 0,
-      fontSize: "2rem"
+      fontSize: "1.2rem"
     },
   },
 }));

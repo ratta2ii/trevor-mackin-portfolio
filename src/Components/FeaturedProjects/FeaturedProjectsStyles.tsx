@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#0e0f0f",
+    backgroundColor: "#0d1117",
     marginBottom: 100,
     marginTop: -10,
     padding: "0 3%",
@@ -154,7 +154,7 @@ const useStyles = makeStyles((theme) => ({
   },
   spanLetterI: {
     marginLeft: 6,
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       marginLeft: 0,
     },
   }

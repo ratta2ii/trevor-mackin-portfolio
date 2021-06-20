@@ -14,7 +14,7 @@ const ProjectList: React.FC<IProps> = ({ displayDetails }) => {
 
   return (
     <Box className={classes.root}>
-      <Typography className={classes.title} variant="h1">
+      <Typography className={classes.title} variant="h2">
         {"<-- more projects -->"}
       </Typography>
       <Grid container spacing={1}>

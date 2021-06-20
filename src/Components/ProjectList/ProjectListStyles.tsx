@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#0e0f0f",
+    background: "#0d1117",
     width: "100%",
     [theme.breakpoints.down("xs")]: {
       paddingLeft: "6%",
@@ -16,12 +16,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     textAlign: "center",
     marginBottom: 100,
     [theme.breakpoints.down("md")]: {},
     [theme.breakpoints.down("sm")]: {
-      fontSize: "3rem",
+      fontSize: "2.5rem",
       marginBottom: 60,
       textTransform: "capitalize",
     },

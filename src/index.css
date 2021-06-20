@@ -1,5 +1,5 @@
 html {
-  background-color: #0e0f0f;
+  background-color: #0d1117;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0e0f0f;
+  background-color: #0d1117;
   height: 100%;
   width: 100%;
 }
@@ -25,7 +25,7 @@ code {
   height: 5px;
 }
 
-/* Removes visual scrollbar at all times (Revist this at a later point) */
+/* TODO: Removes visual scrollbar at all times (Revisit this at a later point) */
 ::-webkit-scrollbar {
   -webkit-appearance: auto;
   width: 0; 
@@ -34,7 +34,6 @@ code {
 .Mui-selected {
   border-bottom: 7px solid red !important;
   color: #fafafa !important;
-  /* background-color: #0d0e0e !important; */
   background-color: #000000 !important;
 }
 
@@ -45,9 +44,9 @@ code {
 
 /* Mobile drawer */
 .MuiDrawer-paper {
-  width: 200px !important;
+  width: 180px !important;
   color: #555050 !important;
-  background-color: #0e0f0f !important;
+  background-color: #0d1117 !important;
 }
 
 .wrap {
