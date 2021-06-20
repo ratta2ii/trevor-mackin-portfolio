@@ -14,11 +14,12 @@ const useStyles = makeStyles((theme) => ({
       "linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('/assets/Images/binary.jpeg')",
     borderBottom: "15px solid rgba(0,0,0,0)",
     backgroundPositionY: -294,
+    backgroundSize: "cover",
     [theme.breakpoints.down("xs")]: {
-      height: 100,
+      height: 115,
       backgroundSize: "unset",
       borderBottom: "16px solid rgba(0,0,0,0)",
-      backgroundPositionY: -260,
+      backgroundPositionY: -221,
     },
   },
   title: {
