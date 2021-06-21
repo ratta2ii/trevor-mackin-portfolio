@@ -53,7 +53,7 @@ const AboutMeCard = () => {
               <span className="property">email</span>
               <span className="operator">: </span>
               <span className="string">
-                <StyledAnchor href="mailto:tismetrm@gmail.com?subject=Mail from trevormackin.com">
+                <StyledAnchor href="mailto:tismetrm@gmail.com?subject=Mail from trevormackin.com" target="_blank" rel="noopener noreferrer">
                   tismeTRM@gmail.com
                 </StyledAnchor>
               </span>
@@ -63,17 +63,17 @@ const AboutMeCard = () => {
               <span className="property">gitHub</span>
               <span className="operator">: </span>
               <span className="string">
-                <StyledAnchor href="https://github.com/ratta2ii'">
+                <StyledAnchor href="https://github.com/ratta2ii" target="_blank" rel="noopener noreferrer" >
                   github.com/ratta2ii
                 </StyledAnchor>
               </span>
               <span>,</span>
             </div>
             <div className="indent">
-              <span className="property">website</span>
+              <span className="property">portfolio</span>
               <span className="operator">: </span>
               <span className="string">
-                <StyledAnchor href="https://trevormackin.com">
+                <StyledAnchor href="https://trevormackin.com" target="_blank" rel="noopener noreferrer" >
                   trevormackin.com
                 </StyledAnchor>
               </span>
@@ -83,7 +83,7 @@ const AboutMeCard = () => {
               <span className="property">linkedIn</span>
               <span className="operator">: </span>
               <span className="string">
-                <StyledAnchor href="https://linkedin.com/in/trevor-mackin">
+                <StyledAnchor href="https://linkedin.com/in/trevor-mackin" target="_blank" rel="noopener noreferrer" >
                   linkedin.com/in/trevor-mackin
                 </StyledAnchor>
               </span>

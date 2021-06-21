@@ -26,9 +26,36 @@ code {
 }
 
 /* TODO: Removes visual scrollbar at all times (Revisit this at a later point) */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   -webkit-appearance: auto;
   width: 0; 
+} */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-before: 1px solid rgb(57, 58, 57);
+  -webkit-border-after: 1px solid rgb(57, 58, 57);
+  border-left: 1px solid rgb(57, 58, 57);
+  -webkit-border-left: 1px solid rgb(57, 58, 57);
+  border-right: 1px solid rgb(57, 58, 57);
+  -webkit-border-right: 1px solid rgb(57, 58, 57);
+  background-color: #0f1621;
+}
+
+::-webkit-scrollbar-thumb {
+  /* Keeps all consistent on all pages (regardless of content size) */
+  min-height: 390px;
+  background: #4caf506e;
+  border-radius: 10px;
+  box-shadow: inset 0 0 4px rgba(171, 219, 39, 1); 
+  -webkit-box-shadow: inset 0 0 4px rgba(171, 219, 39, 1); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(171, 219, 39, 1) 
 }
 
 .Mui-selected {
