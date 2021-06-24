@@ -22,16 +22,22 @@ export const BioAnchor = styled.a`
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    marginTop: 110,
+    marginTop: 85,
+    marginBottom: -15,
+    fontSize: "3rem",
+    textDecoration: "underline",
     backgroundImage:
-      "radial-gradient(circle farthest-side at 50% 50%, #eefaff, #616161)",
+      "radial-gradient(circle farthest-side at 50% 50%, #eceff1, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",
     fontWeight: 600,
-    fontSize: "2.7rem",
+    [theme.breakpoints.down("lg")]: {
+      
+    },
     [theme.breakpoints.down("md")]: {
       marginTop: 75,
+      fontSize: "2.7rem",
     },
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
@@ -48,8 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
   bio: {
     fontSize: 16,
-    color: "#efefef",
-    textAlign: "justify",
+    color: "#eceff1",
+    fontFamily: "system-ui, sans-serif",
     [theme.breakpoints.down("sm")]: {
       padding: "0 50px",
     },

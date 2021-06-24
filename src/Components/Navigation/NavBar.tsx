@@ -11,18 +11,21 @@ const useStyles = makeStyles((theme) => ({
     height: 130,
     display: "flex",
     backgroundImage:
-      "linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('/assets/Images/binary.jpeg')",
+    "linear-gradient(rgba(13, 17, 23, 0.5), rgba(13, 17, 23, 0.5)), url('/assets/Images/binary.jpeg')",
     backgroundSize: "contain",
-    borderBottom: "17px solid rgba(0,0,0,0)",
+    borderBottom: "17px solid rgba(14, 18, 24, .7)",
     backgroundPositionY: -279,
     [theme.breakpoints.down("lg")]: {
-      borderBottom: "16px solid rgba(0,0,0,0)",
+      borderBottom: "16px solid rgba(14, 18, 24, .7)",
       backgroundPositionY: -282,
     },
     [theme.breakpoints.down("xs")]: {
+      backgroundImage:
+      "linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)), url('/assets/Images/binary.jpeg')",
       backgroundSize: "unset",
-      height: 115,
-      backgroundPositionY: -221,
+      height: 105,
+      backgroundPositionY: -234,
+      borderBottom: "20px solid rgba(0,0,0,0)",
     },
   },
   title: {

@@ -11,15 +11,15 @@ import ContactMailIcon from "@material-ui/icons/ContactMail";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import CancelIcon from "@material-ui/icons/Cancel";
 import HomeIcon from "@material-ui/icons/Home";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import SystemUpdateAltIcon from "@material-ui/icons/SystemUpdateAlt";
 import { makeStyles } from "@material-ui/core/styles";
+//import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#0d1117",
-    marginTop: 75,
-    paddingBottom: 50,
+    marginTop: 85,
+    paddingBottom: 52,
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -65,8 +65,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/" === pathname ? "#24313e" : "unset",
             paddingLeft: "/" === pathname ? "8px" : "16px",
-            paddingTop: 15,
-            paddingBottom: 15,
+            paddingTop: 12,
+            paddingBottom: 12,
           }}
         >
           <ListItemIcon>
@@ -83,8 +83,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/projects" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/projects" === pathname ? "#24313e" : "unset",
             paddingLeft: "/projects" === pathname ? "8px" : "16px",
-            paddingTop: 15,
-            paddingBottom: 15,
+            paddingTop: 12,
+            paddingBottom: 12,
           }}
         >
           <ListItemIcon>
@@ -105,7 +105,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             <Typography className={classes.listItemText}>Resume</Typography>
           </ListItem>
         </a>
-        <a
+        {/* // TODO: There is currently link to linkedIn in Navbar (Leave both?) */}
+        {/* <a
           className={classes.linkStyles}
           href="https://www.linkedin.com/in/trevor-mackin/"
           target="_blank"
@@ -117,7 +118,7 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             </ListItemIcon>
             <Typography className={classes.listItemText}>LinkedIn</Typography>
           </ListItem>
-        </a>
+        </a> */}
         <ListItem
           button
           key="Contact"
@@ -127,8 +128,8 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
             borderLeft: "/contact" === pathname ? "8px solid red" : "unset",
             backgroundColor: "/contact" === pathname ? "#24313e" : "unset",
             paddingLeft: "/contact" === pathname ? "8px" : "16px",
-            paddingTop: 15,
-            paddingBottom: 15,
+            paddingTop: 12,
+            paddingBottom: 12,
           }}
         >
           <ListItemIcon>
@@ -136,7 +137,11 @@ const DrawerLinks: React.FC<IProps> = ({ drawerToggle }) => {
           </ListItemIcon>
           <Typography className={classes.listItemText}>Contact</Typography>
         </ListItem>
-        <ListItem button key="Close">
+        <ListItem
+          button
+          key="Close"
+          style={{ paddingTop: 12, paddingBottom: 12 }}
+        >
           <ListItemIcon>
             <CancelIcon className={classes.cancelIcon} />
           </ListItemIcon>

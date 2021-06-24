@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     width: 874,
     minHeight: 750,
     margin: "auto",
-    marginTop: 75,
+    marginTop: 80,
     backgroundColor: "#0d1117",
     overflowX: "hidden",
     [theme.breakpoints.down("md")]: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   techDisplayMainCon: {
-    backgroundImage: `-webkit-linear-gradient(96deg, rgb(252 250 255) 81.5%, #0d1117 15%)`,
+    backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 81%, #0d1117 15%)`,
     width: "100%",
     height: 1000,
     display: "flex",
@@ -29,25 +29,27 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     padding: "20% 20% 10%",
     [theme.breakpoints.down("lg")]: {
-      backgroundImage: `-webkit-linear-gradient(96deg, rgb(252 250 255) 85%, #0d1117 15%)`,
+      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 84%, #0d1117 16%)`,
     },
     [theme.breakpoints.down("md")]: {
-      padding: "30% 20% 10%",
+      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 81%, #0d1117 19%)`,
+      padding: "24% 20% 10%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 86%, #0d1117 14%)`,
+      padding: "31% 20% 10%",
     },
     [theme.breakpoints.down("xs")]: {
-      backgroundImage: `-webkit-linear-gradient(96deg, rgb(252 250 255) 91%, #0d1117 9%)`,
+      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 91%, #0d1117 9%)`,
       height: 700,
-      padding: "120px 10% 10%",
+      padding: "130px 10% 10%",
     },
   },
   footerCon: {
     width: "100%",
-    height: 400,
+    height: 455,
     [theme.breakpoints.down("sm")]: {
       padding: "5%",
-    },
-    [theme.breakpoints.down("xs")]: {
-      height: 455,
     },
   },
 }));
@@ -56,4 +58,5 @@ export default useStyles;
 
 //! Love this color #1b2027
 //! Love this color #264b73
+//! Replace all mobile bg color with this #161e28
 

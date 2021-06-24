@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     backgroundImage:
-      "radial-gradient(circle farthest-side at 30% 50%, #eefaff, #616161)",
+      "radial-gradient(circle farthest-side at 30% 50%, #eceff1, #616161)",
     WebkitBackgroundClip: "text",
     backgroundClip: "text",
     color: "transparent",

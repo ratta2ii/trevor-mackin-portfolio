@@ -10,15 +10,6 @@ interface IProps {
 const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   const classes = useStyles();
 
-  const alertMessage =
-    "IMPORTANT! IMPORTANT! IMPORTANT!\n\nThe application sleeps after 30 mins of inactivity, due to account limitations on Heroku.\n\nBecause of this, the INITIAL load time will be slower than normal (20 secs); This is not a performance issue.\n\nThank you for your patience.";
-
-  const handleLoadSitewithAlert = (url: string) => {
-    alert(alertMessage);
-    console.log(url);
-    window.open(url, "_blank");
-  };
-
   // Images are high resolution (slow loading), so this will attempt to keep the page from being
   // so jumpy. I want the image to be all the way downloaded before rendering the component. I
   // will need to update this at a later date
@@ -33,6 +24,17 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
 
   return (
     <Box className={classes.root}>
+      <Box className={classes.gitHubRepoCount}>
+        <a
+          className={classes.gitHubLinkStyles}
+          href="https://github.com/ratta2ii"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Typography className={classes.gitHubText} >( 149+ GitHub Repositories )</Typography>
+        </a>
+      </Box>
+      {/* //! PROJECT #1 */}
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>
@@ -132,15 +134,21 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           </Box>
           {/* //! Button Group Below */}
           <Box className={classes.optionsBtnsCon}>
-            <Button
-              onClick={() =>
-                handleLoadSitewithAlert(featuredProjectsArr[1].liveSite)
-              }
-              className={classes.optionsBtns}
-              style={{ backgroundColor: "#90a4ae", width: "33.4%" }}
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[1].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View Website
-            </Button>
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  backgroundColor: "#90a4ae",
+                }}
+              >
+                View Website
+              </Button>
+            </a>
             <Button
               className={classes.optionsBtns}
               onClick={() => displayDetails(featuredProjectsArr[1])}

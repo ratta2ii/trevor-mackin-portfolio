@@ -127,13 +127,14 @@ code,
   color: #4dd0e1;
 }
 @media only screen and (max-width: 600px) {
-  .line-numbers {
+  .card .line-numbers {
     font-size: 10px;
+    padding: 0px 5px;
   }
   code {
-    font-size: 13px;
+    font-size: 0.85rem;
     margin-left: 15px;
-    line-height: 20px;
+    line-height: 21px;
   }
   .card .indent {
     padding-left: 20px;

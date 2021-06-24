@@ -18,6 +18,26 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: 0,
     },
   },
+  gitHubRepoCount: {
+    position: "absolute",
+    top: 155,
+    left: 35,
+    [theme.breakpoints.down("xs")]: {
+      position: "unset",
+      top: "unset",
+      left: "unset",
+      textAlign: "center",
+      marginBottom: 60,
+    }, 
+  },
+  gitHubLinkStyles: {
+    textDecoration: "none",
+  },
+  gitHubText: {
+    color: "#eceff1",
+    fontSize: ".9rem",
+    fontWeight: 200,
+  },
   featuredCon: {
     width: 25,
     height: "100%",
@@ -90,9 +110,9 @@ const useStyles = makeStyles((theme) => ({
   },
   techsUsedTop: {
     fontSize: 15,
-    fontWeight: 200,
+    fontWeight: 400,
     marginBottom: 22,
-    color: "#eefaff",
+    color: "#eceff1",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -103,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 100,
     marginTop: 15,
     textAlign: "center",
-    color: "#eefaff",
+    color: "#eceff1",
     [theme.breakpoints.down("md")]: {
       fontSize: 12,
     },
@@ -113,10 +133,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   divider: {
-    marginTop: 90,
+    marginTop: 96,
     marginBottom: 50,
     height: 1,
     background: "#323538",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 60,
+      marginBottom: 45,
+    },
     [theme.breakpoints.down("xs")]: {
       opacity: 0,
       marginTop: 35,
@@ -139,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#757676",
     fontSize: 11,
     outline: "1px solid #1f2123",
-    color: "#eefaff",
+    color: "#eceff1",
     borderRadius: 0,
     fontWeight: 500,
     "&:hover": {

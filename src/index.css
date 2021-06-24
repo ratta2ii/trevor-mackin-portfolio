@@ -12,6 +12,7 @@ body {
   background-color: #0d1117;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 code {
@@ -47,11 +48,29 @@ code {
 
 ::-webkit-scrollbar-thumb {
   /* Keeps all consistent on all pages (regardless of content size) */
-  min-height: 390px;
+  min-height: 411px;
   background: #4caf506e;
   border-radius: 10px;
   box-shadow: inset 0 0 4px rgba(171, 219, 39, 1); 
   -webkit-box-shadow: inset 0 0 4px rgba(171, 219, 39, 1); 
+}
+
+@media only screen and (max-width: 1680px) {
+  ::-webkit-scrollbar-thumb {
+    min-height: 387px
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  ::-webkit-scrollbar-thumb {
+    min-height: 339px
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  ::-webkit-scrollbar-thumb {
+    min-height: 346px
+  }
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -60,8 +79,8 @@ code {
 
 .Mui-selected {
   border-bottom: 7px solid red !important;
-  color: #fafafa !important;
-  /* color: #eefaff !important; */
+  color: #eceff1 !important;
+  /* color: #eceff1 !important; */
   background-color: #000000 !important;
 }
 
@@ -72,7 +91,7 @@ code {
 
 /* Mobile drawer */
 .MuiDrawer-paper {
-  width: 190px !important;
+  width: 186px !important;
   color: #555050 !important;
   background-color: #000000 !important;
 }

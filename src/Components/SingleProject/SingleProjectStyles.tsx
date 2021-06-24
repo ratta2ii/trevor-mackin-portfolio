@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 10,
     fontSize: 12,
     fontWeight: 200,
-    color: "#eefaff",
+    color: "#eceff1",
     textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,
@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     width: "50%",
     height: "100%",
     fontSize: 11,
-    color: "#eefaff",
+    color: "#eceff1",
     borderRadius: 0,
     outline: "1px solid #1f2123",
     fontWeight: 500,

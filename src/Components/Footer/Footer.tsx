@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "100%",
-    color: "#eefaff",
+    color: "#eceff1",
   },
   jobRefGridItm: {
     width: "100%",
@@ -24,37 +24,45 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   referenceBox: {
-    width: 500,
-    fontSize: 16,
-    fontFamily: "sans-serif",
+    width: 470,
     textAlign: "justify",
     color: "#efefef",
+    fontFamily: "emoji",
     [theme.breakpoints.down("md")]: {
-      width: 746,
-      // width: 632,
+      width: 775,
       textAlign: "center",
     },
-    // [theme.breakpoints.down("md")]: {
-    //   width: 632,
-    // },
+    [theme.breakpoints.down("md")]: {
+      width: 635,
+    },
     [theme.breakpoints.down("xs")]: {
+      textAlign: "left",
       padding: "0 4%",
       fontSize: 15,
     },
   },
+  reference: {
+    fontFamily: "emoji",
+  },
   signatureCon: {
     textAlign: "right",
     paddingTop: 20,
-    fontFamily: "sans-serif",
+    fontFamily: "emoji, auto",
     fontSize: 15,
     [theme.breakpoints.down("md")]: {
-      textAlign: "center",
+      textAlign: "right",
       padding: 0,
-      paddingTop: 15,
+      paddingTop: 20,
     },
     [theme.breakpoints.down("xs")]: {
       padding: 10,
     },
+    [theme.breakpoints.down("xs")]: {
+      padding: 10,
+    },
+  },
+  signature: {
+    fontFamily: "emoji",
   },
   aboutMeCardGridItm: {
     width: "100%",
@@ -68,10 +76,10 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "unset",
     },
     [theme.breakpoints.down("sm")]: {
-        marginTop: 30,
+        marginTop: 40,
     },
     [theme.breakpoints.down("xs")]: {
-        marginTop: -15,
+        marginTop: -4,
     },
   },
   cardBox: {
@@ -81,6 +89,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   copyrightGridItm: {
+    backgroundColor: "#0d1117",
     borderTop: "2px solid #1c222a",
     height: 80,
     width: "100%",
@@ -88,10 +97,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     [theme.breakpoints.down("sm")]: {
-      marginTop: 50,
+      marginTop: 90,
     },
     [theme.breakpoints.down("xs")]: {
-      marginTop: -85,
+      height: 60,
+      marginTop: -50,
     },
   },
   copyrightSig: {
@@ -112,18 +122,18 @@ const Footer = (props: any) => {
       {/* Left Grid Item */}
       <Grid item xs={12} lg={6} className={classes.jobRefGridItm}>
         <Box className={classes.referenceBox}>
-          <Typography>
+          <Typography className={classes.reference} >
             <span>"</span>Trevor is knowledgeable, articulate, and a great
             pleasure to work with. He and I graduated from school together, and
             later went on to work on the same team. He brings integrity and
-            intelligence to his work and his overall presence had a positive
+            intelligence to his work, and his overall presence had a positive
             impact on my individual experience. I would recommend Trevor to any
-            company looking for a candidate who will give 110% and lead a team
+            company looking for a candidate who will give 110%, and who will lead a team
             to great success.
             <span>"</span>
           </Typography>
           <Box className={classes.signatureCon}>
-            <Typography>Wei Dai (Coworker 2020)</Typography>
+            <Typography className={classes.signature} >Wei Dai (Coworker 2020)</Typography>
           </Box>
         </Box>
       </Grid>

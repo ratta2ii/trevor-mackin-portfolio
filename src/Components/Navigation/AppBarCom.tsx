@@ -9,14 +9,16 @@ import { MenuItem, MenuList, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
+    position: "static",
     display: "flex",
     justifyContent: "center",
     backgroundColor: "#000000",
-    // backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/Images/binary2.jpeg')",
     boxShadow:
       "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
     [theme.breakpoints.down("xs")]: {
       overflowX: "hidden",
+      position: "fixed",
+      height: 85,
     },
   },
   menuButtonCon: {
@@ -26,16 +28,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuIcon: {
-    width: 45,
-    height: 45,
-    marginLeft: 5,
+    width: 42,
+    height: 42,
+    marginLeft: 6,
     borderRadius: "50%",
-    boxShadow: `0 0 0.1em 0.1em #0253bf`,
+    boxShadow: `0 0 0.06em 0.06em #ccf5f5`,
     "&:hover": {
-      marginLeft: 6,
+      marginLeft: 7,
       marginTop: 1,
-      width: 43,
-      height: 43,
+      width: 40,
+      height: 40,
       boxShadow: "unset",
     },
   },
@@ -112,7 +114,7 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
   let pathname = useLocation().pathname;
 
   return (
-    <AppBar position="static" className={classes.appBar}>
+    <AppBar id="appBarId" className={classes.appBar}>
       <Toolbar>
         <IconButton
           color="inherit"
@@ -121,7 +123,7 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
           className={classes.menuButtonCon}
         >
           <img
-            src="/assets/Images/menu-icon.png"
+            src="/assets/Icons/menu-icon88.png"
             alt="menu icon"
             className={classes.menuIcon}
           />
@@ -185,3 +187,29 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
 };
 
 export default AppBarCom;
+
+/**
+ * ! Transition dynamic navbar on scroll (so its not jumpy)
+ *   transition: "3s ease-in-out",
+    -webkit-transition: padding .1s ease-in,-webkit-box-shadow .1s ease-in;
+    transition: padding .1s ease-in,-webkit-box-shadow .1s ease-in;
+    -o-transition: padding .1s ease-in,box-shadow .1s ease-in;
+    transition: padding .1s ease-in,box-shadow .1s ease-in;
+    transition: padding .1s ease-in,box-shadow .1s ease-in,-webkit-box-shadow .1s ease-in;
+
+      // useEffect(() => {
+  //   // adds a fixed position navBar to mobile version
+  //   var windowWidth = window.innerWidth;
+  //   const navbar: any = document.querySelector("#appBarId");
+  //   if (windowWidth < 600) {
+  //     window.onscroll = () => {
+  //       if (window.scrollY > 25) {
+  //         navbar.style.position = "fixed";
+  //       } else {
+  //         navbar.style.position = "static";
+  //       }
+  //     };
+  //   }
+  //   return () => {};
+  // }, []);
+ */
