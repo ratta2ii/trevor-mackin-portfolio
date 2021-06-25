@@ -1,15 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  profilePicGridItem: {
-    [theme.breakpoints.down("xs")]: {
-      marginLeft: 20,
-    },
-  },
   imgDesignBoxOuter: {
     width: 280,
     height: 280,
-    background: "#68af5c",
+    background: "#cddc39",
     marginTop: 65,
     borderRadius: 10,
     borderTopLeftRadius: 10,

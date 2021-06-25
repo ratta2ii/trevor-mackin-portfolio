@@ -2,14 +2,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 874,
+    width: 934,
     minHeight: 750,
     margin: "auto",
     marginTop: 80,
     backgroundColor: "#0d1117",
     overflowX: "hidden",
     [theme.breakpoints.down("md")]: {
-      width: 768,
+      width: 821,
     },
     [theme.breakpoints.down("sm")]: {
       width: 703,
@@ -18,6 +18,11 @@ const useStyles = makeStyles((theme) => ({
       width: "unset",
       padding: "0 5%",
       marginBottom: 25,
+    },
+  },
+  profilePicGridItem: {
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: 20,
     },
   },
   techDisplayMainCon: {
@@ -32,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 84%, #0d1117 16%)`,
     },
     [theme.breakpoints.down("md")]: {
-      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 81%, #0d1117 19%)`,
+      backgroundImage: `-webkit-linear-gradient(96deg, #fdfeff 84.5%, #0d1117 15.5%)`,
       padding: "24% 20% 10%",
     },
     [theme.breakpoints.down("sm")]: {

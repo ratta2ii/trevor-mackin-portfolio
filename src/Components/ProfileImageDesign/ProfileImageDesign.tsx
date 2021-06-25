@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Grid } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import useStyles from "./ProfileImageDesign.Styles";
 
 const ProfileImageDesign = () => {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} md={6} className={classes.profilePicGridItem}>
+    <>
       <Box className={classes.imgDesignBoxOuter}>
         <Box className={classes.imgDesignBoxMiddle}>
           <Box className={classes.imgDesignBoxInner}>
@@ -29,7 +29,7 @@ const ProfileImageDesign = () => {
           </Box>
         </Box>
       </Box>
-    </Grid>
+    </>
   );
 };
 

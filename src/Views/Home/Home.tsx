@@ -18,9 +18,11 @@ const Home = () => {
       <Box className={classes.root}>
         <Grid container>
           {/* Left Main Grid Item */}
-          <ProfileImageDesign />
+          <Grid item xs={12} md={5} className={classes.profilePicGridItem}>
+            <ProfileImageDesign />
+          </Grid>
           {/* Right Main Grid Item */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={7}>
             <Bio />
           </Grid>
         </Grid>

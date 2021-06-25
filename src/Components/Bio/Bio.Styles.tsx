@@ -9,6 +9,7 @@ export const BioParagraph = styled.p`
 
 export const BioAnchor = styled.a`
   color: #29b6f6;
+  text-decoration: none;
   &:visited {
     color: #29b6f6;
   }
@@ -22,7 +23,7 @@ export const BioAnchor = styled.a`
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    marginTop: 85,
+    marginTop: 110,
     marginBottom: -15,
     fontSize: "3rem",
     textDecoration: "underline",
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
       
     },
     [theme.breakpoints.down("md")]: {
-      marginTop: 75,
+      marginTop: 87,
       fontSize: "2.7rem",
     },
     [theme.breakpoints.down("sm")]: {
