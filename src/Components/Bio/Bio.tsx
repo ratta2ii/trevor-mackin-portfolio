@@ -14,15 +14,15 @@ const Bio = () => {
         <BioParagraph>
           I am ready to take on the world. I am motivated, hungry, focused and
           determined to make a positive impact on this world. I am fully
-          committed to always putting forth my best self, and consistently work
-          towards bettering myself each and every day.
+          committed to always putting forth my best self, and consistently
+          working towards bettering myself each and every day.
         </BioParagraph>
         <BioParagraph>
-          Since the very first day that I made the decision to become a Software
-          Engineer, it has always been about doing everything within my power to
-          best prepare myself for this industry. Whether this be on the job
-          grinding, building out a personal project, practicing algorithms, or
-          even just reading about the latest technologies; regardless, I am
+          Since the very first moment that I made the decision to become a
+          Software Engineer, it has always been about doing everything within my
+          power to best prepare myself for this industry. Whether this be on the
+          job grinding, building out a personal project, practicing algorithms,
+          or even just reading about the latest technologies; regardless, I am
           always striving to improve my skills as a developer.
         </BioParagraph>
         <BioParagraph>
