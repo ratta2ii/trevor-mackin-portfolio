@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     height: 130,
     display: "flex",
     backgroundImage:
-    "linear-gradient(rgba(13, 17, 23, 0), rgba(13, 17, 23, 0)), url('/assets/Images/binary.jpeg')",
+    "linear-gradient(rgba(13, 17, 23, 0.5), rgba(13, 17, 23, 0.5)), url('/assets/Images/binary.jpeg')",
     backgroundSize: "contain",
     borderBottom: "17px solid rgba(14, 18, 24, .7)",
     backgroundPositionY: -279,
