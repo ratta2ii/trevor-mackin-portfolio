@@ -23,7 +23,7 @@ const ProfileImageDesign = () => {
           <Box className={classes.imgDesignBoxInner} style={{ top: -10 }}>
             <img
               className={classes.profileImg}
-              src="/assets/Images/family.jpg"
+              src="/assets/Images/isabella.jpg"
               alt="software engineer project portfolio; creator's dog"
             />
           </Box>

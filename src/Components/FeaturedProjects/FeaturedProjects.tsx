@@ -31,7 +31,7 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Typography className={classes.gitHubText} >( 149+ GitHub Repositories )</Typography>
+          <Typography className={classes.gitHubText} >( 150+ GitHub Repositories )</Typography>
         </a>
       </Box>
       {/* //! PROJECT #1 */}
