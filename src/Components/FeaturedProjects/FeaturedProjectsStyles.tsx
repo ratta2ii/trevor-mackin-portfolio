@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 200,
   },
   featuredCon: {
-    width: 25,
+    width: 23,
     height: "100%",
     display: "flex",
     alignItems: "center",

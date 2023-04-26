@@ -18,9 +18,12 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
     !featuredProjectsArr ||
     !featuredProjectsArr[0].mainImage ||
     !featuredProjectsArr[1].mainImage ||
-    !featuredProjectsArr[2].mainImage
+    !featuredProjectsArr[2].mainImage ||
+    !featuredProjectsArr[3].mainImage
   )
     return <div>Loading...</div>;
+
+  for (var p of featuredProjectsArr) console.log({ name: p.name });
 
   return (
     <Box className={classes.root}>
@@ -31,7 +34,9 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Typography className={classes.gitHubText} >( 150+ GitHub Repositories )</Typography>
+          <Typography className={classes.gitHubText}>
+            ( 150+ GitHub Repositories )
+          </Typography>
         </a>
       </Box>
       {/* //! PROJECT #1 */}
@@ -189,18 +194,16 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
         </Grid>
       </Grid>
       <Divider className={classes.divider}></Divider>
-      {/* //! Project #3 (Portfolio) */}
+      {/* //! PROJECT #3 */}
       <Grid container>
         {/* Left Main Grid Container */}
         <Grid item xs={12} md={1}>
           <Box className={classes.featuredCon}>
-            <Typography className={classes.title}>
-              Portfol<span className={classes.spanLetterI}>i</span>o
-            </Typography>
+            <Typography className={classes.title}>Security</Typography>
           </Box>
         </Grid>
         {/* Right Main Grid Container */}
-        <Grid item xs={12} md={10} style={{ backgroundColor: "#0d1117" }}>
+        <Grid item xs={12} md={10}>
           <Box>
             <Typography className={classes.techsUsedTop}>
               {featuredProjectsArr[2].techUsed}
@@ -209,8 +212,8 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box className={classes.imgContainer}>
             <img
               className={classes.projectImg}
-              // src={featuredProjectsArr[2].mainImage}
-              src="/assets/Images/portfolio_homepage.png"
+              src={featuredProjectsArr[2].mainImage}
+              //src="/assets/Images/az_movie_nights_homepage.png"
               alt="project homepage screen-grab"
             />
           </Box>
@@ -257,6 +260,163 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
           <Box>
             <Typography className={classes.techsUsedBottom}>
               {featuredProjectsArr[2].techUsed}
+            </Typography>
+          </Box>
+        </Grid>
+        {/* //! Right space */}
+        <Grid item sm={1}></Grid>
+      </Grid>
+      <Divider className={classes.divider}></Divider>
+      {/* //! PROJECT #4 */}
+      <Grid container>
+        {/* Left Main Grid Container */}
+        <Grid item xs={12} md={1}></Grid>
+        {/* Right Main Grid Container */}
+        <Grid item xs={12} md={10}>
+          <Box>
+            <Typography
+              className={classes.techsUsedTop}
+              style={{ textAlign: "right" }}
+            >
+              {featuredProjectsArr[3].techUsed}
+            </Typography>
+          </Box>
+          <Box className={classes.featuredCon2}>
+            <Typography className={classes.title}>ECommerce</Typography>
+          </Box>
+          <Box className={classes.imgContainer}>
+            <img
+              className={classes.projectImg}
+              src={featuredProjectsArr[3].mainImage}
+              // src="/assets/Images/csharp-react-jwt-auth-ss.png"
+              alt="project homepage screen-grab"
+            />
+          </Box>
+          {/* //! Button Group Below */}
+          <Box className={classes.optionsBtnsCon}>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[3].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  backgroundColor: "#90a4ae",
+                }}
+              >
+                View Website
+              </Button>
+            </a>
+            <Button
+              className={classes.optionsBtns}
+              onClick={() => displayDetails(featuredProjectsArr[3])}
+              style={{
+                backgroundColor: "#567798",
+              }}
+            >
+              Details
+            </Button>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[3].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  backgroundColor: "#68af5d",
+                }}
+              >
+                GitHub
+              </Button>
+            </a>
+          </Box>
+          <Box>
+            <Typography className={classes.techsUsedBottom}>
+              {featuredProjectsArr[3].techUsed}
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={1}>
+          <Box className={classes.featuredCon3}>
+            <Typography className={classes.title}>
+              ECommerce
+            </Typography>
+          </Box>
+        </Grid>
+      </Grid>
+      <Divider className={classes.divider}></Divider>
+      {/* //! Project #5 (Portfolio) */}
+      <Grid container>
+        {/* Left Main Grid Container */}
+        <Grid item xs={12} md={1}>
+          <Box className={classes.featuredCon}>
+            <Typography className={classes.title}>
+              Portfol<span className={classes.spanLetterI}>i</span>o
+            </Typography>
+          </Box>
+        </Grid>
+        {/* Right Main Grid Container */}
+        <Grid item xs={12} md={10} style={{ backgroundColor: "#0d1117" }}>
+          <Box>
+            <Typography className={classes.techsUsedTop}>
+              {featuredProjectsArr[4].techUsed}
+            </Typography>
+          </Box>
+          <Box className={classes.imgContainer}>
+            <img
+              className={classes.projectImg}
+              // src={featuredProjectsArr[2].mainImage}
+              src="/assets/Images/portfolio_homepage.png"
+              alt="project homepage screen-grab"
+            />
+          </Box>
+          {/* //! Button Group Below */}
+          <Box className={classes.optionsBtnsCon}>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[4].liveSite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{ backgroundColor: "#90a4ae", width: "33.4%" }}
+              >
+                View Website
+              </Button>
+            </a>
+            <Button
+              className={classes.optionsBtns}
+              onClick={() => displayDetails(featuredProjectsArr[4])}
+              style={{
+                backgroundColor: "#567798",
+              }}
+            >
+              Details
+            </Button>
+            <a
+              className={classes.linkStyles}
+              href={featuredProjectsArr[4].gitHubRepo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                className={classes.optionsBtns}
+                style={{
+                  backgroundColor: "#68af5d",
+                }}
+              >
+                GitHub
+              </Button>
+            </a>
+          </Box>
+          <Box>
+            <Typography className={classes.techsUsedBottom}>
+              {featuredProjectsArr[4].techUsed}
             </Typography>
           </Box>
         </Grid>

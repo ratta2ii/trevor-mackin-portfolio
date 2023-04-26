@@ -34,7 +34,9 @@ const Projects = () => {
   return (
     <Box className={classes.root}>
       <FeaturedProjects displayDetails={handleDisplayDetails} />
-      <ProjectList displayDetails={handleDisplayDetails} />
+
+      {/* IMPORTANT: These are all the smaller projects that are temp removed */}
+      {/* <ProjectList displayDetails={handleDisplayDetails} /> */}
 
       {/* Modal to display project details */}
       <ProjectDetailsModal

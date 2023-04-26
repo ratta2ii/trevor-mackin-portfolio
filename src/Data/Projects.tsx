@@ -6,7 +6,7 @@ export const featuredProjectsArr: IProject[] = [
   {
     name: "AZ Movie Nights",
     techUsed: "JavaScript | React | Redux | Material-UI",
-    mainImage: "/assets/Images/az_movie_nights_homepage.png",
+    mainImage: "/assets/Images/movie-nights-homepage.png",
     gitHubRepo: "https://github.com/ratta2ii/movie_night_app",
     liveSite: "https://ratta2ii.github.io/movie_night_app/#/",
     description: () => (
@@ -14,7 +14,7 @@ export const featuredProjectsArr: IProject[] = [
         <p>
           This is a client-side application built with React. The project
           focuses on building a website for an outdoor movie theatre rental
-          company. I used Redux for state management, a Formspree API for email
+          company. I used Redux for state management, EmailJS for email
           services, and Material-UI for all of the design. The application is
           100% responsive and built for both Mobile and Desktop.
         </p>
@@ -70,6 +70,57 @@ export const featuredProjectsArr: IProject[] = [
             folder (triggered by a post-build event)
           </li>
         </ul>
+      </div>
+    ),
+  },
+  {
+    name: "MERN Stack Authentication",
+    techUsed:
+      "MongoDB | Express | React | Node.js | TypeScript | MobX | Passport.js",
+    mainImage: "/assets/Images/screenshot-landing-page.png",
+    // mainImage: "/assets/Images/screenshot-landing-page.png",
+    gitHubRepo: "https://github.com/ratta2ii/mern-stack-authorization",
+    liveSite: "https://mern-stack-authentication.herokuapp.com",
+    description: () => (
+      <div>
+        <p>
+          This application is a way to demonstrate a working knowledge of
+          authentication, and authorization, at different security levels. The
+          login services for the application include OAuth services, Salting and
+          Hashing, as well as Cookies and Sessions.
+        </p>
+        <p>
+          Google and Facebook OAuth strategies, w/ Passport.js middleware, are
+          only one of ways that a user can be authenticated. These particular
+          strategies work within the OAuth 2.0 protocols, and are also
+          considered the most secure for this application (Security level 6).
+        </p>
+        <p>
+          I have also added a "local" strategy as well, that allows a user to
+          register a new account by entering a username (email) and password
+          -instead of using the more secure OAuth services. The password will be
+          a salted, hashed password (Security level 4), that will be stored in a
+          MongoDB database.
+        </p>
+        <p>
+          In addition to the Auth services, the application also demonstrates a
+          working knowledge on how to both build, and deploy, a full-stack MERN
+          application.
+        </p>
+      </div>
+    ),
+  },
+  {
+    name: "All's Sweets",
+    techUsed: "JavaScript | React | EmailJS | Firebase",
+    mainImage: "/assets/Images/allys-sweets-homepage.png",
+    gitHubRepo: "https://github.com/ratta2ii/allys_sweets",
+    liveSite: "https://allyssweets.com",
+    description: () => (
+      <div>
+        <p>
+          Freeze-dried candy sales.
+        </p>
       </div>
     ),
   },
