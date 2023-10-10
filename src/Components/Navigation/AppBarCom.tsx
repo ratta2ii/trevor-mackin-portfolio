@@ -6,6 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
 import { MenuItem, MenuList, Typography } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -122,11 +123,7 @@ const AppBarCom: React.FC<IProps> = ({ handleDrawerToggle }) => {
           onClick={handleDrawerToggle}
           className={classes.menuButtonCon}
         >
-          <img
-            src="/assets/Icons/menu-icon88.png"
-            alt="menu icon"
-            className={classes.menuIcon}
-          />
+        <MenuIcon />
         </IconButton>
         <Box className={classes.tmLinkContainer}>
           <a

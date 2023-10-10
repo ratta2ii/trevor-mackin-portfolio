@@ -23,8 +23,6 @@ const FeaturedProject: React.FC<IProps> = ({ displayDetails }) => {
   )
     return <div>Loading...</div>;
 
-  for (var p of featuredProjectsArr) console.log({ name: p.name });
-
   return (
     <Box className={classes.root}>
       <Box className={classes.gitHubRepoCount}>

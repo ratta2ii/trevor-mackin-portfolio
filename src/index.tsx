@@ -6,11 +6,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
     <HashRouter>
       <App />
-    </HashRouter>
-  </React.StrictMode>,
+    </HashRouter>,
   document.getElementById("root")
 );
 
