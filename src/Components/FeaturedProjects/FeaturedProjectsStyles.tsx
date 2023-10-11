@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#eceff1",
     fontSize: ".9rem",
     fontWeight: 200,
+    textDecoration: 'underline'
   },
   featuredCon: {
     width: 23,
