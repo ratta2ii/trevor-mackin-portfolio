@@ -8,10 +8,10 @@ const useStyles = makeStyles((theme) => ({
       padding: "148px 10% 0 10%",
     },
     [theme.breakpoints.down("sm")]: {
-      padding: "138px 7% 0 7%",
+      padding: "138px 2% 0 2%",
     },
     [theme.breakpoints.down("xs")]: {
-      padding: "80px 5% 0 5%",
+      padding: "80px 0% 0 0%",
     },
   },
   paper: {
